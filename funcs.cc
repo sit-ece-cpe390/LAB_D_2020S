@@ -85,7 +85,7 @@ uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
 
-void removeVowels(char s[]);
+void removeVowels(char s[]); //Derek Kellerman
 void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]); //Justis DiBattista
@@ -288,7 +288,7 @@ int sum(int x[], int n) //Aidan Graffam
   for(int i=0; i<=n-1; i++)
     sum=sum+x[i];
   return sum;
-=======
+}
 // Danie Zatko
 double hypot(double a, double b){
   double c=0;
@@ -317,7 +317,7 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 }
 //Christina Berke
 uint32_t sumsq(uint32_t a,uint32_t b){
-    uint32_t count = 1;
+    uint32_t count = a;
     uint32_t total = 0;
     while (count >= uint32_t b) {
         total += count*count;
