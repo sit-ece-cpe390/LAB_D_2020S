@@ -70,7 +70,11 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
+<<<<<<< HEAD
+double prod(int x[], int n); //Brandon Llizo
+=======
 double prod(int x[], int n);//Nicholas Lenge
+>>>>>>> ec507dcde25a564e8558c5dd84228a48fa0f6ae3
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
@@ -246,25 +250,59 @@ int main() {
 	cout << myhash("hash this!") << '\n';
 	cout << myhash("hash a longer string") << '\n';
 
-    
-    
+
+
 }
 //Jakob Niglio
 double diffSq(double a, double b) {
     double difference = 0;
     difference = (a * a) - (b * b);
     return difference;
+    
+//Jakob Niglio
+int sum(int x[], int n) {
+    int add = 0;
+    for (int i = 0; i < n; i++)
+        add += x[i];
+    return add;
 }
-
+//Brandon Llizo
+uint32_t lcm(uint32_t a, uint32_t b) {
+	uint32_t product = a * b;
+	uint32_t lcm = product / gcd(a, b);
+	return lcm;
+}
 //Christina Berke
-sumsq(1,5){
+uint32_t sumsq(1,5){
     int count = 1;
     int total = 0;
     while count >= 5 {
         total += count*count;
         count ++;
     }
-    cout total;
+    return total;
+}
+// Patrick Biesty
+##include <iostream>
+using namespace std;
+
+uint32_t sum(uint32_t a, uint32_t b){
+  uint32_t c=0;
+  c= (a + b);
+  return c;
+}
+
+double prod(int x[], int n) {
+  double a = 1;
+  for(int i=0; i<n; i++){
+    a=a * x [i];
+  }
+  return a;
+}
+
+int main() {
+  int x[] = {1,2,3,4,5,6}
+  cout << prod(x,6) << endl;
 }
 
 // John Siyaga
