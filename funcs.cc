@@ -326,10 +326,10 @@ uint32_t sumsq(uint32_t a,uint32_t b){
     return total;
 }
 int min(int x[], int n){
-    int temp = arr[0];
+    int temp = x[0];
     for(int i=0; i<n; i++){
-        if(temp>arr[i])
-            temp=arr[i];
+        if(temp>x[i])
+            temp=x[i];
     }
     return temp;
 }
