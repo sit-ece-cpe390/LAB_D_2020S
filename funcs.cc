@@ -90,7 +90,7 @@ void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]); //Justis DiBattista
 uint32_t myhash(const char s[]);
-void lowercase(char s[]); 
+void lowercase(char s[]);
 
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
@@ -333,7 +333,7 @@ int min(int x[], int n){
     }
     return temp;
 }
-    
+
 // Patrick Biesty
 uint32_t sum(uint32_t a, uint32_t b){
   uint32_t c=0;
@@ -390,11 +390,43 @@ uint32_t countEvens(const int x[], int n) //Vincent Schlenker
 {
   int i;
   int counter=0;
-  
+
   for(i=0; i<n; i++)
     {
-      if(x[i] % 2 ==0) 
+      if(x[i] % 2 ==0)
 	counter++;
     }
   return counter;
+}
+
+//Frank Pinnola
+uint64_t prod(uint32_t a, uint32_t b) {
+  return a * b;
+}
+
+void normalize(double x[], int n) {
+  double sum = 0.0;
+  for(int i = 0; i < n; i++) {
+    sum += x[i];
+  }
+
+  double mean = sum / n;
+  double demean[n];
+
+  double normalized[n];
+  for(int i = 0; i < n; i++) {
+    demean[i] = x[i] / mean;
+  }
+  sum = 0.0;
+  for (int i = 0; i < n; i++) {
+    sum += demean[i];
+  }
+  cout << "Sum " << sum << endl;
+
+  for (int i = 0; i < n; i++) {
+    normalized[i] = demean[i] / sum;
+    cout << normalized[i] << ' ';
+  }
+
+  cout << endl;
 }
