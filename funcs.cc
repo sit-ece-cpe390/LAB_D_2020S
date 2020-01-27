@@ -20,7 +20,7 @@ double fact(uint32_t n);
 uint64_t sum(uint32_t n);
 double hypot(double a, double b);
 double diffsq(double a, double b);
-double mean(int a, int b);
+double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
