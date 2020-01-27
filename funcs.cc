@@ -24,7 +24,7 @@ double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
-bool pythagoreantriple(double a, double b);
+bool pythagoreantriple(double a, double b); //Jose Fermin
 double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
@@ -75,9 +75,9 @@ double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
 void demean(double x[], int n);
 void normalize(double x[], int n);
-void round(double x[], int n);
+void round(double x[], int n); //Jose Fermin
 void square(double x[], int n); //Brandon Llizo
-void squareRoot(double x[], int n);
+void squareRoot(double x[], int n); 
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
@@ -346,3 +346,30 @@ int max(int arr[], int n)
   
     return x; 
 } 
+//Jose Fermin
+bool pythagoreantriple(double a, double b)
+{
+	double aa = a*a;
+	double bb = b*b;
+	double c = 0;
+	double cc = aa + bb;
+	c = sqrt(cc);
+	if((double) c == (int) c)
+	{
+		return true;
+	}	
+	else
+	{
+		return false;
+	}
+}
+//David Barlow
+void squareRoot(double x[], int n)
+{
+	double x;
+	int n;
+	cout << "Give me a number" << endl;
+	cin >> n;
+	x = pow(n, 0.5);
+	cout << "The square root is " << x << endl;
+}
