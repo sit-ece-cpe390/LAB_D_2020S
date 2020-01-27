@@ -80,7 +80,7 @@ void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
-uint32_t countEvens(const int x[], int n);
+uint32_t countEvens(const int x[], int n);//Nicholas Lenge
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
@@ -252,7 +252,7 @@ double diffSq(double a, double b) {
     double difference = 0;
     difference = (a * a) - (b * b);
     return difference;
-
+}
 //Jakob Niglio
 int sum(int x[], int n) {
     int add = 0;
