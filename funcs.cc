@@ -77,7 +77,7 @@ void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n);
 uint32_t randomElement(const int x[], int n);
-uint32_t countEvens(const int x[], int n);
+uint32_t countEvens(const int x[], int n); //Vincent Schlenker
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
