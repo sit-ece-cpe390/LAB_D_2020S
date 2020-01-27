@@ -11,7 +11,7 @@
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
 uint64_t prod(uint32_t a, uint32_t b);
-uint32_t sumsq(uint32_t a, uint32_t b);
+uint32_t sumsq(uint32_t a, uint32_t b); // Christina Berke
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
@@ -68,6 +68,10 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
+<<<<<<< HEAD
+double prod(int x[], int n); //Brandon Llizo
+=======
+>>>>>>> b6a05e2500e3c4647766195effd092d21d220888
 double prod(int x[], int n);//Nicholas Lenge
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
@@ -247,6 +251,46 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
+
+/*
+bool isPrime(uint32_t p)
+{
+  if (p>1)
+    {
+     for(int i=2;i<p;i++)
+       {
+	 if(p%i==0)
+	   {
+	     return false;
+	     break;
+	   }
+       }
+    }
+  return true;
+}
+*/
+bool isPrime(uint32_t p) //Aidan Graffam
+{
+  if (p>1)
+    {
+      for (int i=2;i<p;i++)
+	{
+	  if(p%i==0)
+	    {
+	      return false;
+	      break;
+	    }
+	}
+    }
+  return true;
+}
+int sum(int x[], int n) //Aidan Graffam
+{
+  int sum=0;
+  for(int i=0; i<=n-1; i++)
+    sum=sum+x[i];
+  return sum;
+}
 // Danie Zatko
 double hypot(double a, double b){
   double c=0;
@@ -277,12 +321,21 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 uint32_t sumsq(uint32_t a,uint32_t b){
     uint32_t count = 1;
     uint32_t total = 0;
-    while count >= uint32_t b {
+    while (count >= uint32_t b) {
         total += count*count;
         count ++;
     }
     return total;
 }
+int min(int x[], int n){
+    int temp = arr[0];
+    for(int i=0; i<n; i++){
+        if(temp>arr[i])
+            temp=arr[i];
+    }
+    return temp;
+}
+    
 // Patrick Biesty
 uint32_t sum(uint32_t a, uint32_t b){
   uint32_t c=0;
