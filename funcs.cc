@@ -70,7 +70,11 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
+<<<<<<< HEAD
 double prod(int x[], int n); //Brandon Llizo
+=======
+double prod(int x[], int n);//Nicholas Lenge
+>>>>>>> ec507dcde25a564e8558c5dd84228a48fa0f6ae3
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
@@ -90,8 +94,8 @@ void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
+void lowercase(char s[]); //Justis DiBattista test
 void lowercase(char s[]);
-
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
 double taylorSeriesE(double x);
@@ -118,7 +122,7 @@ int main() {
 	cout << prod(3, 20) << '\n'; // just note whether you think these are right
 	cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
 	cout << prod(3, 100) << '\n';
-	cout << sumsq(1, 5) << '\n';
+    cout << sumsq(1, 5) << '\n';
 	cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
 	cout << "countPrimes(1,1000000): " << countPrimes(1, 1000000) << '\n';
 	cout << "isPrime(1001)=" << isPrime(1001) << '\n';
@@ -246,6 +250,8 @@ int main() {
 	cout << myhash("hash this!") << '\n';
 	cout << myhash("hash a longer string") << '\n';
 
+    
+    
 }
 //Jakob Niglio
 double diffSq(double a, double b) {
@@ -253,8 +259,18 @@ double diffSq(double a, double b) {
     difference = (a * a) - (b * b);
     return difference;
 }
+//Brandon Llizo
 uint32_t lcm(uint32_t a, uint32_t b) {
 	uint32_t product = a * b;
 	uint32_t lcm = product / gcd(a, b);
 	return lcm;
+//Christina Berke
+sumsq(1,5){
+    int count = 1;
+    int total = 0;
+    while count >= 5 {
+        total += count*count;
+        count ++;
+    }
+    cout total;
 }
