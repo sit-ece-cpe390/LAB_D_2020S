@@ -88,7 +88,7 @@ void addToEach(int x[], int n, int delta);
 void removeVowels(char s[]); //Derek Kellerman
 void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]); //Justis DiBattista
-uint32_t checksum(const char s[]); 
+uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
 void lowercase(char s[]);
 
