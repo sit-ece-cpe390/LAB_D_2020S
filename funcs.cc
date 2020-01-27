@@ -24,7 +24,7 @@ double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
 bool pythagoreantriple(double a, double b);
-double trigIdentity(double x);
+double trigIdentity(double x); //Balal Khan
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
