@@ -1,3 +1,4 @@
+Sean Jahnige
 Christina Berke
 Michael Iafelice
 Aidan Graffam
@@ -11,6 +12,10 @@ Vincent Schlenker
 Aidan Graffam
 Dominic Zecchino
 Jakob Niglio
+<<<<<<< HEAD
+Jack Mavorah
+Patrick Biesty
+Jose Fermin
 Brandon Llizo
 Frank Pinnola
 Daniel Zatko
