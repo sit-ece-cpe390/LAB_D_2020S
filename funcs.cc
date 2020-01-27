@@ -326,10 +326,10 @@ uint32_t sumsq(uint32_t a,uint32_t b){
     return total;
 }
 int min(int x[], int n){
-    int temp = arr[0];
+    int temp = x[0];
     for(int i=0; i<n; i++){
-        if(temp>arr[i])
-            temp=arr[i];
+        if(temp>x[i])
+            temp=x[i];
     }
     return temp;
 }
@@ -347,11 +347,6 @@ double prod(int x[], int n) {
     a=a * x [i];
   }
   return a;
-}
-
-int main() {
-  int x[] = {1,2,3,4,5,6}
-  cout << prod(x,6) << endl;
 }
 
 // John Siyaga
@@ -390,4 +385,16 @@ bool pythagoreantriple(double a, double b) {
 	if (sqrt(a*a + b*b) - (uint32_t)(sqrt(a*a + b*b)) == 0)
 	return true;
 	else return false;
+}
+uint32_t countEvens(const int x[], int n) //Vincent Schlenker
+{
+  int i;
+  int counter=0;
+  
+  for(i=0; i<n; i++)
+    {
+      if(x[i] % 2 ==0) 
+	counter++;
+    }
+  return counter;
 }
