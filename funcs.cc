@@ -88,7 +88,7 @@ void addToEach(int x[], int n, int delta);
 void removeVowels(char s[]); //Derek Kellerman
 void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]); //Justis DiBattista
-uint32_t checksum(const char s[]);
+uint32_t checksum(const char s[]); 
 uint32_t myhash(const char s[]);
 void lowercase(char s[]);
 
@@ -250,6 +250,17 @@ int main() {
 
 }
 
+//Nicholas Lenge
+uint32_t countPrimes(uint32_t a, uint32_t b) { 
+	uint32_t count = 0;
+	for (uint32_t i = a; a <= b; a++) {
+		if (isPrime(i)) {
+			count++;
+		}
+	}
+	return count;
+}
+
 bool isPrime(uint32_t p) //Aidan Graffam
 {
   if (p>1)
@@ -382,21 +393,6 @@ uint32_t countEvens(const int x[], int n) //Vincent Schlenker
   return counter;
 }
 
-double mean(int a, int b) //Vincent Schlenker
-{
-  double Total=0;
-  double Mean =1;
-  int Counter= 0;
-  int i=0;
-  
-  for( i=a; i<= b; i++)
-    {
-      Total+=i;
-      Counter= Counter+1;
-    }
-  Mean = Total/ Counter;
-  return Mean;
-}
 //Frank Pinnola
 uint64_t prod(uint32_t a, uint32_t b) {
   return a * b;
@@ -419,11 +415,14 @@ void normalize(double x[], int n) {
   for (int i = 0; i < n; i++) {
     sum += demean[i];
   }
+  cout << "Sum " << sum << endl;
 
   for (int i = 0; i < n; i++) {
-    x[i] = demean[i] / sum;
+    normalized[i] = demean[i] / sum;
+    cout << normalized[i] << ' ';
   }
 
+  cout << endl;
 }
 //Brandon Llizo
 void square(double x[], int n) {
