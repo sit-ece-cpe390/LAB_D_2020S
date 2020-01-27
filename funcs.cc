@@ -8,12 +8,8 @@
 #include <iostream>
 #include <cstdint>
 using namespace std;
-uint32_t sum(uint32_t a, uint32_t b);
-<<<<<<< HEAD
-uint64_t prod(uint32_t a, uint32_t b); // Christina Berke
-=======
+uint32_t sum(uint32_t a, uint32_t b); // Christina Berke
 uint64_t prod(uint32_t a, uint32_t b); // Frank Pinnola
->>>>>>> ad148a51481841a978a9e7ed851452b2d7a1b1c1
 uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);//Aidan Graffam
