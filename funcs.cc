@@ -94,7 +94,7 @@ void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
-void lowercase(char s[]); //Justis DiBattista
+void lowercase(char s[]); //Justis DiBattista test
 
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
