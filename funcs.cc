@@ -118,16 +118,7 @@ int main() {
 	cout << prod(3, 20) << '\n'; // just note whether you think these are right
 	cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
 	cout << prod(3, 100) << '\n';
-	
     cout << sumsq(1, 5) << '\n';
-    int count = 1;
-    int total = 0;
-    while count >= 5 {
-        total += count*count;
-        count ++;
-    }
-    cout total;
-    
 	cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
 	cout << "countPrimes(1,1000000): " << countPrimes(1, 1000000) << '\n';
 	cout << "isPrime(1001)=" << isPrime(1001) << '\n';
@@ -263,4 +254,15 @@ double diffSq(double a, double b) {
     double difference = 0;
     difference = (a * a) - (b * b);
     return difference;
+}
+
+//Christina Berke
+sumsq(1,5){
+    int count = 1;
+    int total = 0;
+    while count >= 5 {
+        total += count*count;
+        count ++;
+    }
+    cout total;
 }
