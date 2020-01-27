@@ -323,3 +323,21 @@ void reverse(int x[], int n){
     x[i] = x2[i];
   }
 }
+
+// Sean Jahnige
+double fact(uint32_t n) {
+	double factSum = 1;
+
+	for (int i = n; i > 1; i--)
+		factSum *= i;
+	return factSum;
+}
+// Sean Jahnige
+double mean(int x[], int n) {
+	double mean = 0;
+
+	for (int i = 0; i < n; i++)
+		mean += x[i];
+	mean = (double)mean / n;
+	return mean;
+}
