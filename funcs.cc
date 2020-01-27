@@ -10,9 +10,9 @@
 #include <cmath>
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
-uint64_t prod(uint32_t a, uint32_t b);
+uint64_t prod(uint32_t a, uint32_t b); //Frank Pinnola
 uint32_t sumsq(uint32_t a, uint32_t b); // Christina Berke
-uint32_t countPrimes(uint32_t a, uint32_t b);
+uint32_t countPrimes(uint32_t a, uint32_t b);//Nicholas Lenge
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
 uint64_t prod(uint32_t a, uint32_t b); //Justis DiBattista
@@ -70,12 +70,12 @@ double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
 double prod(int x[], int n); //Brandon Llizo
-double prod(int x[], int n);//Nicholas Lenge
+double prod(int x[], int n);
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
 void demean(double x[], int n);
-void normalize(double x[], int n);
+void normalize(double x[], int n); //Frank Pinnola
 void round(double x[], int n);
 void square(double x[], int n); //Brandon Llizo
 void squareRoot(double x[], int n);
@@ -85,12 +85,12 @@ uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
 
-void removeVowels(char s[]);
+void removeVowels(char s[]); //Derek Kellerman
 void reverse(char s[]);//Daniel Zatko
-bool isPalindrome(const char s[]);
-uint32_t checksum(const char s[]); //Justis DiBattista
+bool isPalindrome(const char s[]); //Justis DiBattista
+uint32_t checksum(const char s[]); 
 uint32_t myhash(const char s[]);
-void lowercase(char s[]); 
+void lowercase(char s[]);
 
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
@@ -250,23 +250,6 @@ int main() {
 
 }
 
-/*
-bool isPrime(uint32_t p)
-{
-  if (p>1)
-    {
-     for(int i=2;i<p;i++)
-       {
-	 if(p%i==0)
-	   {
-	     return false;
-	     break;
-	   }
-       }
-    }
-  return true;
-}
-*/
 bool isPrime(uint32_t p) //Aidan Graffam
 {
   if (p>1)
@@ -288,7 +271,7 @@ int sum(int x[], int n) //Aidan Graffam
   for(int i=0; i<=n-1; i++)
     sum=sum+x[i];
   return sum;
-=======
+}
 // Danie Zatko
 double hypot(double a, double b){
   double c=0;
@@ -317,7 +300,7 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 }
 //Christina Berke
 uint32_t sumsq(uint32_t a,uint32_t b){
-    uint32_t count = 1;
+    uint32_t count = a;
     uint32_t total = 0;
     while (count >= uint32_t b) {
         total += count*count;
@@ -333,7 +316,7 @@ int min(int x[], int n){
     }
     return temp;
 }
-    
+
 // Patrick Biesty
 uint32_t sum(uint32_t a, uint32_t b){
   uint32_t c=0;
@@ -390,10 +373,10 @@ uint32_t countEvens(const int x[], int n) //Vincent Schlenker
 {
   int i;
   int counter=0;
-  
+
   for(i=0; i<n; i++)
     {
-      if(x[i] % 2 ==0) 
+      if(x[i] % 2 ==0)
 	counter++;
     }
   return counter;
@@ -413,4 +396,40 @@ double mean(int a, int b) //Vincent Schlenker
     }
   Mean = Total/ Counter;
   return Mean;
+//Frank Pinnola
+uint64_t prod(uint32_t a, uint32_t b) {
+  return a * b;
+}
+
+void normalize(double x[], int n) {
+  double sum = 0.0;
+  for(int i = 0; i < n; i++) {
+    sum += x[i];
+  }
+
+  double mean = sum / n;
+  double demean[n];
+
+  double normalized[n];
+  for(int i = 0; i < n; i++) {
+    demean[i] = x[i] / mean;
+  }
+  sum = 0.0;
+  for (int i = 0; i < n; i++) {
+    sum += demean[i];
+  }
+  cout << "Sum " << sum << endl;
+
+  for (int i = 0; i < n; i++) {
+    normalized[i] = demean[i] / sum;
+    cout << normalized[i] << ' ';
+  }
+
+  cout << endl;
+}
+//Brandon Llizo
+void square(double x[], int n) {
+	for (int i = 0; i < n; i++) {
+		x[i] *= x[i];
+	}
 }
