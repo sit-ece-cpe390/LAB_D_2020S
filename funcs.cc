@@ -349,11 +349,6 @@ double prod(int x[], int n) {
   return a;
 }
 
-int main() {
-  int x[] = {1,2,3,4,5,6}
-  cout << prod(x,6) << endl;
-}
-
 // John Siyaga
 double mean(int a, int b, int c) {
 		return (a + b + c) / 3.0;
@@ -390,4 +385,16 @@ bool pythagoreantriple(double a, double b) {
 	if (sqrt(a*a + b*b) - (uint32_t)(sqrt(a*a + b*b)) == 0)
 	return true;
 	else return false;
+}
+uint32_t countEvens(const int x[], int n) //Vincent Schlenker
+{
+  int i;
+  int counter=0;
+  
+  for(i=0; i<n; i++)
+    {
+      if(x[i] % 2 ==0) 
+	counter++;
+    }
+  return counter;
 }
