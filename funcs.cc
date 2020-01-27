@@ -250,6 +250,17 @@ int main() {
 
 }
 
+//Nicholas Lenge
+uint32_t countPrimes(uint32_t a, uint32_t b) { 
+	uint32_t count = 0;
+	for (uint32_t i = a; a <= b; a++) {
+		if (isPrime(i)) {
+			count++;
+		}
+	}
+	return count;
+}
+
 bool isPrime(uint32_t p) //Aidan Graffam
 {
   if (p>1)
