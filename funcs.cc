@@ -25,10 +25,6 @@ double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
 
-double mean(int a, int b, int c) {
-		return (a + b + c) / 3.0;
-} // John Siyaga
-
 bool pythagoreantriple(double a, double b); //Derek Kellerman
 double trigIdentity(double x);
 /*
@@ -89,16 +85,6 @@ void round(double x[], int n);
 void square(double x[], int n); //Jose Fermin
 void squareRoot(double x[], int n); //David Barlow
 uint32_t strip(double x[], uint32_t n, double a, double b);
-
-void reverse(int x[], int n){
-  int x2[n];
-  for(int i = 0; i < n; i++) {
-    x2[i] = x[n - 1 - i];
-  }
-  for(int i = 0; i < n; i++) {
-    x[i] = x2[i];
-  }
-} // John Siyaga
 
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
@@ -264,14 +250,21 @@ int main() {
 	cout << myhash("hash this!") << '\n';
 	cout << myhash("hash a longer string") << '\n';
 
-    
-    
+
+
 }
 //Jakob Niglio
 double diffSq(double a, double b) {
     double difference = 0;
     difference = (a * a) - (b * b);
     return difference;
+    
+//Jakob Niglio
+int sum(int x[], int n) {
+    int add = 0;
+    for (int i = 0; i < n; i++)
+        add += x[i];
+    return add;
 }
 //Brandon Llizo
 uint32_t lcm(uint32_t a, uint32_t b) {
@@ -288,4 +281,41 @@ uint32_t sumsq(uint32_t a,uint32_t b){
         count ++;
     }
     return total;
+}
+// Patrick Biesty
+##include <iostream>
+using namespace std;
+
+uint32_t sum(uint32_t a, uint32_t b){
+  uint32_t c=0;
+  c= (a + b);
+  return c;
+}
+
+double prod(int x[], int n) {
+  double a = 1;
+  for(int i=0; i<n; i++){
+    a=a * x [i];
+  }
+  return a;
+}
+
+int main() {
+  int x[] = {1,2,3,4,5,6}
+  cout << prod(x,6) << endl;
+}
+
+// John Siyaga
+double mean(int a, int b, int c) {
+		return (a + b + c) / 3.0;
+}
+
+void reverse(int x[], int n){
+  int x2[n];
+  for(int i = 0; i < n; i++) {
+    x2[i] = x[n - 1 - i];
+  }
+  for(int i = 0; i < n; i++) {
+    x[i] = x2[i];
+  }
 }
