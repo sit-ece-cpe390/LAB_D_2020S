@@ -18,11 +18,7 @@ void swap(uint32_t& a, uint32_t& b); //Max Perez
 uint32_t gcd(uint32_t a, uint32_t b);
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b); //David Barlow
-uint32_t lcm(uint32_t a, uint32_t b) { //Brandon Llizo
-	int product = a * b;
-	int lcm = product / gcd(a, b);
-	return lcm;
-}
+uint32_t lcm(uint32_t a, uint32_t b); //Brandon Llizo
 double fact(uint32_t n); //Sean Jahnige
 uint64_t sum(uint32_t n); //Jose Fermin
 double hypot(double a, double b);//Daniel Zatko
