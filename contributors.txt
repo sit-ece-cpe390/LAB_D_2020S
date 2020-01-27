@@ -1,29 +1,15 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Michael Iafelice
-=======
-Aidan Graffam
-Jakob Niglio
->>>>>>> 99fecd49e216822604f43627066445ef7d8f3e0a
-=======
-=======
-<<<<<<< HEAD
-Jose Fermin
-=======
+
+Daniel Zatko
 Brandon Llizo
->>>>>>> 4c36990b6f7d7d028b33c1a02cc1da41f988be3a
-=======
-=======
->>>>>>> 3c3a74527e235d7801525b4743fcb30e9e45e75a
->>>>>>> 2d5838e68699f2dfcaefbdd0284e921c871bda47
+Jose Fermin
 John Siyaga
 Justis DiBattista
 Vincent Schlenker
 Aidan Graffam
 Jakob Niglio
 <<<<<<< HEAD
-Balal Khan
+<<<<<<< HEAD
+Balal Khan 
 =======
 <<<<<<< HEAD
 
@@ -40,3 +26,8 @@ Frank Pinnola
 >>>>>>> 3c3a74527e235d7801525b4743fcb30e9e45e75a
 >>>>>>> 2d5838e68699f2dfcaefbdd0284e921c871bda47
 >>>>>>> 4b6cff178512eb2fd5beeac19053c00e5a39f984
+=======
+Frank Pinnola
+Brandon Llizo
+>>>>>>> 77a2e8b4ddcda6c99a1f8964c42f2afe88cc9464
+Balal Khan
