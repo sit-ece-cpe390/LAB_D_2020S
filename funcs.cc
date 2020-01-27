@@ -1,5 +1,5 @@
 /*
-	Lab1 Team Programming 
+	Lab1 Team Programming
 	Author: Dov Kruger
 
 	For a description of each function, see:
@@ -7,6 +7,7 @@
 */
 #include <iostream>
 #include <cstdint>
+#include <cmath>
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
 uint64_t prod(uint32_t a, uint32_t b);
@@ -18,12 +19,12 @@ uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b);
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
-double hypot(double a, double b);
+double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
-double mean(int a, int b, int c); //Jakob Niglio
+double mean(int a, int b, int c);
 bool pythagoreantriple(double a, double b);
-double trigIdentity(double x);
+double trigIdentity(double x); //Balal Khan
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -64,24 +65,26 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 
 
 // array problems
-double mean(int x[], int n);
-int max(int x[], int n);
-int min(int x[], int n);
-double prod(int x[], int n);
-int sum(int x[], int n); //Aidan Graffam
+double mean(int x[], int n); //Sean Jahnige
+int max(int x[], int n); //Michael Iafelice
+int min(int x[], int n); //Max Perez
+double prod(int x[], int n);//Nicholas Lenge
+int min(int x[], int n); // Christina Berke
+double prod(int x[], int n); //Patrick Biesty
+int sum(int x[], int n);
 void demean(double x[], int n);
 void normalize(double x[], int n);
 void round(double x[], int n);
-void square(double x[], int n);
+void square(double x[], int n); //Brandon Llizo
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
-void reverse(int x[], int n);
+
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
-void reverse(char s[]);
+void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
@@ -104,6 +107,8 @@ void print(const int x[], int n) {
 	cout << '\n';
 }
 
+
+
 int main() {
 	cout << sum(1, 3) << ' ' << sum(1, 100) << '\n'; // should work no problem, right?
 	cout << sum(1, 1000000) << '\n'; // what should this be? Don't assume it's right, check!
@@ -112,7 +117,7 @@ int main() {
 	cout << prod(3, 10) << '\n';
 	cout << prod(3, 20) << '\n'; // just note whether you think these are right
 	cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
-	cout << prod(3, 100) << '\n'; 
+	cout << prod(3, 100) << '\n';
 	cout << sumsq(1, 5) << '\n';
 	cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
 	cout << "countPrimes(1,1000000): " << countPrimes(1, 1000000) << '\n';
@@ -201,7 +206,7 @@ int main() {
 	double arr7[] = { 2.5, 2.8, 3.1, 4.2, 9.6, 7.1, -7.3, -7.6};
 	round(arr7, sizeof(arr7)/sizeof(double));
 	print(arr7, sizeof(arr7)/sizeof(double));
-	
+
 	cout << "countevens=" << countEvens(arr6, 7) << '\n';
 	addToEach(arr6, 7, 3);
 	print(arr6, sizeof(arr6)/sizeof(double));
@@ -211,7 +216,7 @@ int main() {
 	print(arr8, sizeof(arr8)/sizeof(double));
 	squareRoot(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double)); // should be back to orinal values
-	
+
 	int r1[] = {1, 2, 3, 4, 5, 6, 7};
 	reverse(r1, 7);
 	print(r1, 7);
@@ -231,7 +236,7 @@ int main() {
 	char s3[] = "a toyota. able was i ere i saw elba";
 	reverse(s3);
 	cout << s3 << '\n';
-	
+
 	cout << "isPalindrome(atoyota)=" << isPalindrome("atoyota") << '\n';
 	cout << "isPalindrome(testing)=" << isPalindrome("testing") << '\n';
 	cout << "checksum=" << checksum("ABC") << '\n'; // should be 65 + 66 + 67
@@ -242,6 +247,7 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
+
 /*
 bool isPrime(uint32_t p)
 {
@@ -280,4 +286,92 @@ int sum(int x[], int n) //Aidan Graffam
   for(int i=0; i<=n-1; i++)
     sum=sum+x[i];
   return sum;
+=======
+// Danie Zatko
+double hypot(double a, double b){
+  double c=0;
+  c=sqrt((a*a)+(b*b));
+  return c;
+}
+
+//Jakob Niglio
+double diffSq(double a, double b) {
+    double difference = 0;
+    difference = (a * a) - (b * b);
+    return difference;
+}
+//Jakob Niglio
+int sum(int x[], int n) {
+    int add = 0;
+    for (int i = 0; i < n; i++)
+        add += x[i];
+    return add;
+}
+//Brandon Llizo
+uint32_t lcm(uint32_t a, uint32_t b) {
+	uint32_t product = a * b;
+	uint32_t lcm = product / gcd(a, b);
+	return lcm;
+}
+//Christina Berke
+uint32_t sumsq(uint32_t a,uint32_t b){
+    uint32_t count = 1;
+    uint32_t total = 0;
+    while count >= uint32_t b {
+        total += count*count;
+        count ++;
+    }
+    return total;
+}
+// Patrick Biesty
+uint32_t sum(uint32_t a, uint32_t b){
+  uint32_t c=0;
+  c= (a + b);
+  return c;
+}
+
+double prod(int x[], int n) {
+  double a = 1;
+  for(int i=0; i<n; i++){
+    a=a * x [i];
+  }
+  return a;
+}
+
+int main() {
+  int x[] = {1,2,3,4,5,6}
+  cout << prod(x,6) << endl;
+}
+
+// John Siyaga
+double mean(int a, int b, int c) {
+		return (a + b + c) / 3.0;
+}
+
+void reverse(int x[], int n){
+  int x2[n];
+  for(int i = 0; i < n; i++) {
+    x2[i] = x[n - 1 - i];
+  }
+  for(int i = 0; i < n; i++) {
+    x[i] = x2[i];
+  }
+}
+
+// Sean Jahnige
+double fact(uint32_t n) {
+	double factSum = 1;
+
+	for (int i = n; i > 1; i--)
+		factSum *= i;
+	return factSum;
+}
+// Sean Jahnige
+double mean(int x[], int n) {
+	double mean = 0;
+
+	for (int i = 0; i < n; i++)
+		mean += x[i];
+	mean = (double)mean / n;
+	return mean;
 }
