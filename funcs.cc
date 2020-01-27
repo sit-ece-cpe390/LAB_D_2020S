@@ -257,7 +257,7 @@ double diffSq(double a, double b) {
 }
 
 //Christina Berke
-sumsq(1,5){
+uint32_t sumsq(1,5){
     int count = 1;
     int total = 0;
     while count >= 5 {
