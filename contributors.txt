@@ -8,14 +8,9 @@ John Siyaga
 Justis DiBattista
 Vincent Schlenker
 Aidan Graffam
-<<<<<<< HEAD
 Dominic Zecchino
-=======
 Jakob Niglio
 Brandon Llizo
 Frank Pinnola
-<<<<<<< HEAD
->>>>>>> 9dfbe5f3b3e32a69507dafe279babb9a96f5e97a
-=======
-test
->>>>>>> 438f610a9016abefc1235fb7ac2e7cfdf7d83ae0
+Daniel Zatko
+
