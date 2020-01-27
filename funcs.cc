@@ -11,7 +11,7 @@
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
 uint64_t prod(uint32_t a, uint32_t b);
-uint32_t sumsq(uint32_t a, uint32_t b); //Dominic Zecchino
+uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b); //Michael Iafelice
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
@@ -68,7 +68,7 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
-double prod(int x[], int n);//Dominic Zecchino
+double prod(int x[], int n);//Nicholas Lenge
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
@@ -334,4 +334,14 @@ bool pythagoreantriple(double a, double b)
 	{
 		return false;
 	}
+}
+//David Barlow
+void squareRoot(double x[], int n)
+{
+	double x;
+	int n;
+	cout << "Give me a number" << endl;
+	cin >> n;
+	x = pow(n, 0.5);
+	cout << "The square root is " << x << endl;
 }
