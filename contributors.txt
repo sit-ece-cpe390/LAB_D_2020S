@@ -13,8 +13,6 @@ Jakob Niglio
 Jack Mavorah
 Patrick Biesty
 Jose Fermin
-=======
 Brandon Llizo
->>>>>>> d6cdef8ff7c6c32d506ad4c21a83b5a793d80840
 Frank Pinnola
->>>>>>> 9dfbe5f3b3e32a69507dafe279babb9a96f5e97a
+Daniel Zatko
