@@ -23,7 +23,7 @@ double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
-bool pythagoreantriple(double a, double b);
+bool pythagoreantriple(double a, double b); //Jose Fermin
 double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
@@ -76,7 +76,7 @@ void demean(double x[], int n);
 void normalize(double x[], int n);
 void round(double x[], int n);
 void square(double x[], int n); //Brandon Llizo
-void squareRoot(double x[], int n);
+void squareRoot(double x[], int n); //Jose Fermin
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
