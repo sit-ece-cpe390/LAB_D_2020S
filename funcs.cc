@@ -18,12 +18,12 @@ void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b); //Brandon Llizo
 double fact(uint32_t n);
-uint64_t sum(uint32_t n); //Jose Fermin
+uint64_t sum(uint32_t n); 
 double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c); // John Siyaga
-bool pythagoreantriple(double a, double b);
+bool pythagoreantriple(double a, double b); //Jose Fermin
 double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
