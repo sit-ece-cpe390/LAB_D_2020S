@@ -68,7 +68,7 @@ double mean(int x[], int n);
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); 
 double prod(int x[], int n);
-int sum(int x[], int n);
+int sum(int x[], int n); //Jakob Niglio
 void demean(double x[], int n);
 void normalize(double x[], int n); //Frank Pinnola
 void round(double x[], int n);
