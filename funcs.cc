@@ -74,7 +74,7 @@ double prod(int x[], int n);
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
-void demean(double x[], int n);
+void demean(double x[], int n);//Nicholas Lenge
 void normalize(double x[], int n); //Frank Pinnola
 void round(double x[], int n);
 void square(double x[], int n); //Brandon Llizo
