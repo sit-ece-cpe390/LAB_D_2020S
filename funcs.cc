@@ -264,5 +264,5 @@ sumsq(1,5){
         total += count*count;
         count ++;
     }
-    cout total;
+    return total;
 }
