@@ -68,14 +68,14 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
-double prod(int x[], int n); //Brandon Llizo
+double prod(int x[], int n);//Nicholas Lenge
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
 void demean(double x[], int n);
 void normalize(double x[], int n);
 void round(double x[], int n);
-void square(double x[], int n);
+void square(double x[], int n); //Brandon Llizo
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
