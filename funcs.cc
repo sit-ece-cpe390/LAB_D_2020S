@@ -9,7 +9,7 @@
 #include <cstdint>
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
-uint64_t prod(uint32_t a, uint32_t b);
+uint64_t prod(uint32_t a, uint32_t b); // Frank Pinnola
 uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);//Aidan Graffam
@@ -70,7 +70,7 @@ int min(int x[], int n);
 double prod(int x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n);
-void normalize(double x[], int n);
+void normalize(double x[], int n); //Frank Pinnola
 void round(double x[], int n);
 void square(double x[], int n); //Jose Fermin
 void squareRoot(double x[], int n);
