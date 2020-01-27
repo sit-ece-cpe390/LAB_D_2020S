@@ -71,7 +71,7 @@ int min(int x[], int n); //Max Perez
 double prod(int x[], int n);//Nicholas Lenge
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
-int sum(int x[], int n);
+int sum(int x[], int n);//Daniel Zatko
 void demean(double x[], int n);
 void normalize(double x[], int n);
 void round(double x[], int n);
@@ -84,7 +84,7 @@ uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
-void reverse(char s[]);//Daniel Zatko
+void reverse(char s[]);
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
