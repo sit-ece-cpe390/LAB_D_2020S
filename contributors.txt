@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 Justis DiBattista
@@ -20,11 +21,18 @@ Brandon Llizo
 =======
 >>>>>>> 3c3a74527e235d7801525b4743fcb30e9e45e75a
 >>>>>>> 2d5838e68699f2dfcaefbdd0284e921c871bda47
+=======
+
+Daniel Zatko
+Brandon Llizo
+Jose Fermin
+>>>>>>> 77a2e8b4ddcda6c99a1f8964c42f2afe88cc9464
 John Siyaga
 Justis DiBattista
 Vincent Schlenker
 Aidan Graffam
 Jakob Niglio
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -43,3 +51,7 @@ Brandon Llizo
 Frank Pinnola
 >>>>>>> 3c3a74527e235d7801525b4743fcb30e9e45e75a
 >>>>>>> 2d5838e68699f2dfcaefbdd0284e921c871bda47
+=======
+Frank Pinnola
+Brandon Llizo
+>>>>>>> 77a2e8b4ddcda6c99a1f8964c42f2afe88cc9464
