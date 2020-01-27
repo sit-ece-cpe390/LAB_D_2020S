@@ -30,7 +30,7 @@ double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c); // John Siyaga
 bool pythagoreantriple(double a, double b);
-double trigIdentity(double x); // Justis DiBattista
+double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -77,13 +77,13 @@ int min(int x[], int n); //Max Perez
 double prod(int x[], int n);
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
-int sum(int x[], int n); //David Barlow
+int sum(int x[], int n);
 int sum(int x[], int n); //Jakob Niglio
 void demean(double x[], int n);
 void normalize(double x[], int n); //Frank Pinnola
 void round(double x[], int n);
 void square(double x[], int n); //Jose Fermin
-void squareRoot(double x[], int n);
+void squareRoot(double x[], int n); //David Barlow
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n); // John Siyaga
 uint32_t randomElement(const int x[], int n);
@@ -94,7 +94,7 @@ void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
-void lowercase(char s[]); //Justis DiBattista
+void lowercase(char s[]);
 
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
