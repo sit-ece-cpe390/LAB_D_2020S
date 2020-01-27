@@ -85,7 +85,7 @@ uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
 
-void removeVowels(char s[]); //Derek Kellerman
+void removeVowels(char &s[]); //Derek Kellerman
 void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]); //Justis DiBattista
@@ -380,12 +380,32 @@ double mean(int x[], int n) {
 	mean = (double)mean / n;
 	return mean;
 }
+
 //Derek Kellerman
 bool pythagoreantriple(double a, double b) {
 	if (sqrt(a*a + b*b) - (uint32_t)(sqrt(a*a + b*b)) == 0)
 	return true;
 	else return false;
 }
+//Derek Kellerman
+void removeVowels(char &s[]) {
+	char temp[sizeOf(s)] = {};
+	int j = 0;
+	for (int i=0; i<sizeOf(s); i++) {
+		if (!(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')) {
+			temp[j] = s[i];
+			j++;
+		}
+	}
+
+	char finalarray[j+1] = {};
+	for (int i=0; i<=j; i++) {
+		finalarray[i] = temp[j];
+	}
+
+	return finalarray;
+}
+
 uint32_t countEvens(const int x[], int n) //Vincent Schlenker
 {
   int i;
