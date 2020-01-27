@@ -242,3 +242,42 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
+/*
+bool isPrime(uint32_t p)
+{
+  if (p>1)
+    {
+     for(int i=2;i<p;i++)
+       {
+	 if(p%i==0)
+	   {
+	     return false;
+	     break;
+	   }
+       }
+    }
+  return true;
+}
+*/
+bool isPrime(uint32_t p) //Aidan Graffam
+{
+  if (p>1)
+    {
+      for (int i=2;i<p;i++)
+	{
+	  if(p%i==0)
+	    {
+	      return false;
+	      break;
+	    }
+	}
+    }
+  return true;
+}
+int sum(int x[], int n) //Aidan Graffam
+{
+  int sum=0;
+  for(int i=0; i<=n-1; i++)
+    sum=sum+x[i];
+  return sum;
+}
