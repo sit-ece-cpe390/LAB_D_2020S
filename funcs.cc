@@ -12,7 +12,7 @@ using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
 uint64_t prod(uint32_t a, uint32_t b); //Frank Pinnola
 uint32_t sumsq(uint32_t a, uint32_t b); // Christina Berke
-uint32_t countPrimes(uint32_t a, uint32_t b);
+uint32_t countPrimes(uint32_t a, uint32_t b);//Nicholas Lenge
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
 uint64_t prod(uint32_t a, uint32_t b); //Justis DiBattista
@@ -70,7 +70,7 @@ double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
 double prod(int x[], int n); //Brandon Llizo
-double prod(int x[], int n);//Nicholas Lenge
+double prod(int x[], int n);
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
