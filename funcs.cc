@@ -430,3 +430,22 @@ void square(double x[], int n) {
 		x[i] *= x[i];
 	}
 }
+//David Barlow
+uint32_t gcd(uint32_t a, uint32_t b)
+{
+		int a, b, value, i;
+	cout << "Give me a number" << endl;
+	cin >> a;
+	cout << "Give me another number to find the GCD of them" << endl;
+	cin >> b;
+	for (i = 1; i <= a && i <= b; i++)
+	{
+		if (a % i == 0 && b % i == 0)
+		{
+			value = i;
+		}
+	}
+	cout << value << endl;
+	return value;
+
+}
