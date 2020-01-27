@@ -1,5 +1,5 @@
 /*
-	Lab1 Team Programming 
+	Lab1 Team Programming
 	Author: Dov Kruger
 
 	For a description of each function, see:
@@ -9,7 +9,7 @@
 #include <cstdint>
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
-uint64_t prod(uint32_t a, uint32_t b);
+uint64_t prod(uint32_t a, uint32_t b); // Frank Pinnola
 uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);
@@ -70,7 +70,7 @@ int min(int x[], int n);
 double prod(int x[], int n);
 int sum(int x[], int n);
 void demean(double x[], int n);
-void normalize(double x[], int n);
+void normalize(double x[], int n); // Frank Pinnola
 void round(double x[], int n);
 void square(double x[], int n);
 void squareRoot(double x[], int n);
@@ -112,7 +112,7 @@ int main() {
 	cout << prod(3, 10) << '\n';
 	cout << prod(3, 20) << '\n'; // just note whether you think these are right
 	cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
-	cout << prod(3, 100) << '\n'; 
+	cout << prod(3, 100) << '\n';
 	cout << sumsq(1, 5) << '\n';
 	cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
 	cout << "countPrimes(1,1000000): " << countPrimes(1, 1000000) << '\n';
@@ -201,7 +201,7 @@ int main() {
 	double arr7[] = { 2.5, 2.8, 3.1, 4.2, 9.6, 7.1, -7.3, -7.6};
 	round(arr7, sizeof(arr7)/sizeof(double));
 	print(arr7, sizeof(arr7)/sizeof(double));
-	
+
 	cout << "countevens=" << countEvens(arr6, 7) << '\n';
 	addToEach(arr6, 7, 3);
 	print(arr6, sizeof(arr6)/sizeof(double));
@@ -211,7 +211,7 @@ int main() {
 	print(arr8, sizeof(arr8)/sizeof(double));
 	squareRoot(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double)); // should be back to orinal values
-	
+
 	int r1[] = {1, 2, 3, 4, 5, 6, 7};
 	reverse(r1, 7);
 	print(r1, 7);
@@ -231,7 +231,7 @@ int main() {
 	char s3[] = "a toyota. able was i ere i saw elba";
 	reverse(s3);
 	cout << s3 << '\n';
-	
+
 	cout << "isPalindrome(atoyota)=" << isPalindrome("atoyota") << '\n';
 	cout << "isPalindrome(testing)=" << isPalindrome("testing") << '\n';
 	cout << "checksum=" << checksum("ABC") << '\n'; // should be 65 + 66 + 67
