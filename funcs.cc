@@ -317,3 +317,21 @@ void reverse(int x[], int n){
     x[i] = x2[i];
   }
 }
+
+//Jose Fermin
+bool pythagoreantriple(double a, double b)
+{
+	double aa = a*a;
+	double bb = b*b;
+	double c = 0;
+	double cc = aa + bb;
+	c = sqrt(cc);
+	if((double) c == (int) c)
+	{
+		return true;
+	}	
+	else
+	{
+		return false;
+	}
+}
