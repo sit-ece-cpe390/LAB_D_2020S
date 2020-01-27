@@ -247,11 +247,20 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
-// Danie Zatko
+// Daniel Zatko
 double hypot(double a, double b){
   double c=0;
   c=sqrt((a*a)+(b*b));
   return c;
+}
+
+// Daniel Zatko
+int sum(int x[], int n){
+    int total=0;
+    for (int i=0; i<n; i++){
+        total=total+x[i];
+    }
+    return total;
 }
 
 //Jakob Niglio
