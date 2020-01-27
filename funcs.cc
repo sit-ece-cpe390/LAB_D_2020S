@@ -25,7 +25,7 @@ double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c); // John Siyaga
-bool pythagoreantriple(double a, double b);
+bool pythagoreantriple(double a, double b); //Derek Kellerman
 double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
@@ -70,7 +70,7 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
-double prod(int x[], int n);
+double prod(int x[], int n);//Nicholas Lenge
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
@@ -90,8 +90,8 @@ void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
+void lowercase(char s[]); //Justis DiBattista test
 void lowercase(char s[]);
-
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
 double taylorSeriesE(double x);
