@@ -8,6 +8,7 @@
 #include <iostream>
 #include <cstdint>
 #include <cmath>
+#include <bits/stdc++.h> 
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
 uint64_t prod(uint32_t a, uint32_t b);
@@ -317,3 +318,31 @@ void reverse(int x[], int n){
     x[i] = x2[i];
   }
 }
+
+//Michael Iafelice 
+uint32_t countPrimes(uint32_t a, uint32_t b) {
+	
+
+	uint32_t count = 0; 
+	uint32_t res = 0;
+	for(uint32_t p = 1; p <= b; p++) {
+		
+		res = p;
+
+	if (res = isPrime((uint32_t) p))
+		{
+			count++;
+		}
+	}
+		return count;	
+}
+int max(int arr[], int n) 
+{ 
+    int x = arr[0]; 
+   
+    for (int i = 1; i < n; i++) 
+        if (arr[i] > x) 
+            x = arr[i]; 
+  
+    return x; 
+} 
