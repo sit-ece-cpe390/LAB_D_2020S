@@ -25,7 +25,7 @@ double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c); // John Siyaga
-bool pythagoreantriple(double a, double b);
+bool pythagoreantriple(double a, double b); //Balal Khan
 double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
