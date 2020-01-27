@@ -30,7 +30,7 @@ double trigIdentity(double x); //Balal Khan
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
 */
-void quadraticEquation(double a, double b, double c, double& x1, double& x2);
+void quadraticEquation(double a, double b, double c, double& x1, double& x2); //Jose Fermin
 
 double area(double x1, double y1, double x2, double y2, double x3, double y3);
 double area(double x1, double y1,
