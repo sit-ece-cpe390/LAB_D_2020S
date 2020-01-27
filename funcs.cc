@@ -279,7 +279,7 @@ uint32_t sumsq(uint32_t a,uint32_t b){
     }
     return total;
 }
-int findSmallestElement(int x[], int n){
+int min(int x[], int n){
     int temp = arr[0];
     for(int i=0; i<n; i++){
         if(temp>arr[i])
