@@ -288,7 +288,7 @@ int sum(int x[], int n) //Aidan Graffam
   for(int i=0; i<=n-1; i++)
     sum=sum+x[i];
   return sum;
-=======
+}
 // Danie Zatko
 double hypot(double a, double b){
   double c=0;
