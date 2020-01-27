@@ -80,7 +80,7 @@ void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
-uint32_t countEvens(const int x[], int n);//Nicholas Lenge
+uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
@@ -247,6 +247,13 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
+// Danie Zatko
+double hypot(double a, double b){
+  double c=0;
+  c=sqrt((a*a)+(b*b));
+  return c;
+}
+
 //Jakob Niglio
 double diffSq(double a, double b) {
     double difference = 0;
@@ -276,24 +283,6 @@ uint32_t sumsq(uint32_t a,uint32_t b){
     }
     return total;
 }
-
-double mean(int a, int b) //Vincent Schlenker
-{
- 
-  double Total=0;
-  double Mean =1;
-  int Counter= 0;
-  int i=0;
- 
-
-  for( i=a; i<= b; i++)
-    {
-      Total+=i;
-      Counter= Counter+1;
-    }
-  Mean = Total/ Counter;
-  return Mean;
-}
 // Patrick Biesty
 uint32_t sum(uint32_t a, uint32_t b){
   uint32_t c=0;
@@ -307,6 +296,11 @@ double prod(int x[], int n) {
     a=a * x [i];
   }
   return a;
+}
+
+int main() {
+  int x[] = {1,2,3,4,5,6}
+  cout << prod(x,6) << endl;
 }
 
 // John Siyaga
