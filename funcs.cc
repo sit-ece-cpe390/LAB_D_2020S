@@ -21,7 +21,7 @@ void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b);
 double fact(uint32_t n);
-uint64_t sum(uint32_t n);
+uint64_t sum(uint32_t n); //Jose Fermin
 double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
