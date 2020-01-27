@@ -398,3 +398,19 @@ uint32_t countEvens(const int x[], int n) //Vincent Schlenker
     }
   return counter;
 }
+
+double mean(int a, int b) //Vincent Schlenker
+{
+  double Total=0;
+  double Mean =1;
+  int Counter= 0;
+  int i=0;
+  
+  for( i=a; i<= b; i++)
+    {
+      Total+=i;
+      Counter= Counter+1;
+    }
+  Mean = Total/ Counter;
+  return Mean;
+}
