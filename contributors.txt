@@ -10,7 +10,6 @@ Vincent Schlenker
 Aidan Graffam
 Dominic Zecchino
 Jakob Niglio
-Brandon Llizo
 Frank Pinnola
 Daniel Zatko
 Derek Kellerman
