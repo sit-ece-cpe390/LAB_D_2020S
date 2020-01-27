@@ -1,13 +1,20 @@
+Christina Berke
 Michael Iafelice
-Daniel Zatko
+Aidan Graffam
+Jakob Niglio
+Jose Fermin
 Brandon Llizo
 John Siyaga
 Justis DiBattista
 Vincent Schlenker
 Aidan Graffam
 Jakob Niglio
+<<<<<<< HEAD
 Jack Mavorah
 Patrick Biesty
 Jose Fermin
+=======
+Brandon Llizo
+>>>>>>> d6cdef8ff7c6c32d506ad4c21a83b5a793d80840
 Frank Pinnola
 >>>>>>> 9dfbe5f3b3e32a69507dafe279babb9a96f5e97a
