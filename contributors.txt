@@ -1,2 +1,15 @@
+Michael Iafelice
+Daniel Zatko
+Brandon Llizo
+John Siyaga
+Justis DiBattista
+Vincent Schlenker
 Aidan Graffam
+<<<<<<< HEAD
 Dominic Zecchino
+=======
+Jakob Niglio
+Patrick Biesty
+Jose Fermin
+Frank Pinnola
+>>>>>>> 9dfbe5f3b3e32a69507dafe279babb9a96f5e97a
