@@ -1,6 +1,9 @@
-<<<<<<< HEAD
+Christina Berke
+Michael Iafelice
+Aidan Graffam
+Jakob Niglio
+Jose Fermin
 Brandon Llizo
-=======
 John Siyaga
 Justis DiBattista
 Vincent Schlenker
@@ -10,5 +13,9 @@ Max Robert Perez
 =======
 Jakob Niglio
 Brandon Llizo
+<<<<<<< HEAD
 >>>>>>> fb584f8c9c09967b45879af327c21f89a81ed60f
 >>>>>>> 4c36990b6f7d7d028b33c1a02cc1da41f988be3a
+=======
+Frank Pinnola
+>>>>>>> d6cdef8ff7c6c32d506ad4c21a83b5a793d80840
