@@ -11,6 +11,7 @@ using namespace std;
 uint32_t sum(uint32_t a, uint32_t b); //Patrick Biesty
 uint64_t prod(uint32_t a, uint32_t b); // Frank Pinnola
 uint32_t sumsq(uint32_t a, uint32_t b); // Christina Berke
+uint32_t sumsq(uint32_t a, uint32_t b); //Dominic Zecchino
 uint32_t countPrimes(uint32_t a, uint32_t b); //Michael Iafelice
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
