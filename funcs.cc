@@ -16,6 +16,8 @@ uint32_t countPrimes(uint32_t a, uint32_t b); //Michael Iafelice
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b); //Max Perez
 uint32_t gcd(uint32_t a, uint32_t b);
+void swap(uint32_t& a, uint32_t& b);
+uint32_t gcd(uint32_t a, uint32_t b); //David Barlow
 uint32_t lcm(uint32_t a, uint32_t b); //Brandon Llizo
 double fact(uint32_t n);
 uint64_t sum(uint32_t n); //Jose Fermin
@@ -70,8 +72,8 @@ int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
 double prod(int x[], int n);
 int min(int x[], int n); // Christina Berke
-double prod(int x[], int n); //Dominic Zecchino
-int sum(int x[], int n);
+double prod(int x[], int n); //Patrick Biesty
+int sum(int x[], int n); //David Barlow
 int sum(int x[], int n); //Jakob Niglio
 void demean(double x[], int n);
 void normalize(double x[], int n); //Frank Pinnola
@@ -83,7 +85,6 @@ void reverse(int x[], int n); // John Siyaga
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
-
 void removeVowels(char s[]);
 void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
