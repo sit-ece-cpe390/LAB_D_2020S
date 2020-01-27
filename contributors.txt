@@ -1,10 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Jose Fermin
+=======
+Brandon Llizo
+>>>>>>> 4c36990b6f7d7d028b33c1a02cc1da41f988be3a
 =======
 John Siyaga
 Justis DiBattista
 Vincent Schlenker
 Aidan Graffam
 Jakob Niglio
+<<<<<<< HEAD
 
+=======
+Brandon Llizo
+>>>>>>> 4c36990b6f7d7d028b33c1a02cc1da41f988be3a
 >>>>>>> fb584f8c9c09967b45879af327c21f89a81ed60f
