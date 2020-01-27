@@ -396,6 +396,7 @@ double mean(int a, int b) //Vincent Schlenker
     }
   Mean = Total/ Counter;
   return Mean;
+}
 //Frank Pinnola
 uint64_t prod(uint32_t a, uint32_t b) {
   return a * b;
