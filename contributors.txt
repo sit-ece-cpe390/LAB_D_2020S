@@ -11,6 +11,5 @@ Aidan Graffam
 Jakob Niglio
 Brandon Llizo
 Frank Pinnola
-<<<<<<< HEAD
+Daniel Zatko
 Derek Kellerman
->>>>>>> 7cafaa6b3db3d177cbf928db216eeaf06abd5fdf
