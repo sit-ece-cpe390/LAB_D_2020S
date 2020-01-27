@@ -88,7 +88,7 @@ void addToEach(int x[], int n, int delta);
 void removeVowels(char s[]); //Derek Kellerman
 void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]); //Justis DiBattista
-uint32_t checksum(const char s[]); 
+uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
 void lowercase(char s[]);
 
@@ -418,14 +418,11 @@ void normalize(double x[], int n) {
   for (int i = 0; i < n; i++) {
     sum += demean[i];
   }
-  cout << "Sum " << sum << endl;
 
   for (int i = 0; i < n; i++) {
-    normalized[i] = demean[i] / sum;
-    cout << normalized[i] << ' ';
+    x[i] = demean[i] / sum;
   }
 
-  cout << endl;
 }
 //Brandon Llizo
 void square(double x[], int n) {
