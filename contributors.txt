@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+
+=======
 Sean Jahnige
+>>>>>>> 989a94f710444ea62267084b167c53b498114e76
 Christina Berke
 Michael Iafelice
 Aidan Graffam
@@ -16,5 +20,6 @@ Jack Mavorah
 Patrick Biesty
 Jose Fermin
 Frank Pinnola
+Nicholas Lenge
 Daniel Zatko
 Derek Kellerman
