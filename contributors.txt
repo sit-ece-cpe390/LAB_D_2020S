@@ -8,6 +8,7 @@ John Siyaga
 Justis DiBattista
 Vincent Schlenker
 Aidan Graffam
+Dominic Zecchino
 Jakob Niglio
 <<<<<<< HEAD
 Jack Mavorah
@@ -16,3 +17,4 @@ Jose Fermin
 Brandon Llizo
 Frank Pinnola
 Daniel Zatko
+Derek Kellerman
