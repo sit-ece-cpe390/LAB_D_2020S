@@ -242,3 +242,9 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
+//Jakob Niglio
+double diffSq(double a, double b) {
+    double difference = 0;
+    difference = (a * a) - (b * b);
+    return difference;
+}
