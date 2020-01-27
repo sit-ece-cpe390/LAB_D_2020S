@@ -280,12 +280,12 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 	return lcm;
 }
 //Christina Berke
-sumsq(1,5){
+uint32_t sumsq(1,5){
     int count = 1;
     int total = 0;
     while count >= 5 {
         total += count*count;
         count ++;
     }
-    cout total;
+    return total;
 }
