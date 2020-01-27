@@ -87,8 +87,8 @@ void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]); //Derek Kellerman
 void reverse(char s[]);//Daniel Zatko
-bool isPalindrome(const char s[]);
-uint32_t checksum(const char s[]); //Justis DiBattista
+bool isPalindrome(const char s[]); //Justis DiBattista
+uint32_t checksum(const char s[]); 
 uint32_t myhash(const char s[]);
 void lowercase(char s[]);
 
@@ -250,8 +250,8 @@ int main() {
 
 }
 
-
-bool isPrime(uint32_t p) //Aidan Graffam
+/*
+bool isPrime(uint32_t p)
 {
   if (p>1)
     {
@@ -266,7 +266,7 @@ bool isPrime(uint32_t p) //Aidan Graffam
     }
   return true;
 }
-
+*/
 bool isPrime(uint32_t p) //Aidan Graffam
 {
   if (p>1)
