@@ -260,6 +260,20 @@ uint32_t countPrimes1(uint32_t a, uint32_t b) {
 	}
 	return count;
 }
+//Nicholas Lenge
+void demean(double x[], int n) { 
+
+	double sum = 0;
+	for (int i = 0; i < n; i++) {
+		sum += x[i];
+	}
+
+	double mean = sum / n;
+
+	for (int i = 0; i < n; i++) {
+		x[i] -= mean;
+	}
+};
 
 bool isPrime(uint32_t p) //Aidan Graffam
 {
