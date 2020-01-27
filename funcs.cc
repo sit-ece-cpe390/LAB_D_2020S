@@ -10,13 +10,12 @@
 #include <cmath>
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
-uint64_t prod(uint32_t a, uint32_t b); //Frank Pinnola
-uint32_t sumsq(uint32_t a, uint32_t b); // Christina Berke
-uint32_t countPrimes(uint32_t a, uint32_t b);//Nicholas Lenge
+uint64_t prod(uint32_t a, uint32_t b);
+uint32_t sumsq(uint32_t a, uint32_t b);
+uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
-uint64_t prod(uint32_t a, uint32_t b); //Justis DiBattista
-uint32_t gcd(uint32_t a, uint32_t b); //David Barlow
+uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b);
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
@@ -25,12 +24,12 @@ double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
 bool pythagoreantriple(double a, double b);
-double trigIdentity(double x); //Balal Khan
+double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
 */
-void quadraticEquation(double a, double b, double c, double& x1, double& x2); //Jose Fermin
+void quadraticEquation(double a, double b, double c, double& x1, double& x2);
 
 double area(double x1, double y1, double x2, double y2, double x3, double y3);
 double area(double x1, double y1,
@@ -69,26 +68,25 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
-double prod(int x[], int n); //Brandon Llizo
-double prod(int x[], int n);
+double prod(int x[], int n);//Nicholas Lenge
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
-void demean(double x[], int n);//Nicholas Lenge
-void normalize(double x[], int n); //Frank Pinnola
+void demean(double x[], int n);
+void normalize(double x[], int n);
 void round(double x[], int n);
 void square(double x[], int n); //Brandon Llizo
-void squareRoot(double x[], int n); //David Barlow
+void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
 
-void removeVowels(char &s[]); //Derek Kellerman
-void reverse(char s[]);//Daniel Zatko
-bool isPalindrome(const char s[]); //Justis DiBattista
-uint32_t checksum(const char s[]); 
+void removeVowels(char s[]);
+void reverse(char s[], int length);//Daniel Zatko
+bool isPalindrome(const char s[]);
+uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
 void lowercase(char s[]);
 
@@ -249,54 +247,6 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
-
-//Nicholas Lenge
-uint32_t countPrimes1(uint32_t a, uint32_t b) { 
-	uint32_t count = 0;
-	for (uint32_t i = a; a <= b; a++) {
-		if (isPrime(i)) {
-			count++;
-		}
-	}
-	return count;
-}
-//Nicholas Lenge
-void demean(double x[], int n) { 
-
-	double sum = 0;
-	for (int i = 0; i < n; i++) {
-		sum += x[i];
-	}
-
-	double mean = sum / n;
-
-	for (int i = 0; i < n; i++) {
-		x[i] -= mean;
-	}
-	return mean;
-};
-bool isPrime(uint32_t p) //Aidan Graffam
-{
-  if (p>1)
-    {
-      for (int i=2;i<p;i++)
-	{
-	  if(p%i==0)
-	    {
-	      return false;
-	      break;
-	    }
-	}
-    }
-  return true;
-}
-int sum(int x[], int n) //Aidan Graffam
-{
-  int sum=0;
-  for(int i=0; i<=n-1; i++)
-    sum=sum+x[i];
-  return sum;
-}
 // Danie Zatko
 double hypot(double a, double b){
   double c=0;
@@ -325,23 +275,14 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 }
 //Christina Berke
 uint32_t sumsq(uint32_t a,uint32_t b){
-    uint32_t count = a;
+    uint32_t count = 1;
     uint32_t total = 0;
-    while (count >= uint32_t b) {
+    while count >= uint32_t b {
         total += count*count;
         count ++;
     }
     return total;
 }
-int min(int x[], int n){
-    int temp = x[0];
-    for(int i=0; i<n; i++){
-        if(temp>x[i])
-            temp=x[i];
-    }
-    return temp;
-}
-
 // Patrick Biesty
 uint32_t sum(uint32_t a, uint32_t b){
   uint32_t c=0;
@@ -357,6 +298,11 @@ double prod(int x[], int n) {
   return a;
 }
 
+int main() {
+  int x[] = {1,2,3,4,5,6}
+  cout << prod(x,6) << endl;
+}
+
 // John Siyaga
 double mean(int a, int b, int c) {
 		return (a + b + c) / 3.0;
@@ -370,125 +316,4 @@ void reverse(int x[], int n){
   for(int i = 0; i < n; i++) {
     x[i] = x2[i];
   }
-}
-// Sean Jahnige
-double fact(uint32_t n) {
-	double factSum = 1;
-
-	for (int i = n; i > 1; i--)
-		factSum *= i;
-	return factSum;
-}
-// Sean Jahnige
-double mean(int x[], int n) {
-	double mean = 0;
-
-	for (int i = 0; i < n; i++)
-		mean += x[i];
-	mean = (double)mean / n;
-	return mean;
-}
-
-//Derek Kellerman
-bool pythagoreantriple(double a, double b) {
-	if (sqrt(a*a + b*b) - (uint32_t)(sqrt(a*a + b*b)) == 0)
-	return true;
-	else return false;
-}
-//Derek Kellerman
-void removeVowels(char &s[]) {
-	char temp[sizeOf(s)] = {};
-	int j = 0;
-	for (int i=0; i<sizeOf(s); i++) {
-		if (!(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')) {
-			temp[j] = s[i];
-			j++;
-		}
-	}
-
-	char finalarray[j+1] = {};
-	for (int i=0; i<=j; i++) {
-		finalarray[i] = temp[j];
-	}
-
-	return finalarray;
-}
-
-uint32_t countEvens(const int x[], int n) //Vincent Schlenker
-{
-  int i;
-  int counter=0;
-
-  for(i=0; i<n; i++)
-    {
-      if(x[i] % 2 ==0)
-	counter++;
-    }
-  return counter;
-}
-
-//Frank Pinnola
-uint64_t prod(uint32_t a, uint32_t b) {
-  return a * b;
-}
-
-void normalize(double x[], int n) {
-  double sum = 0.0;
-  for(int i = 0; i < n; i++) {
-    sum += x[i];
-  }
-
-  double mean = sum / n;
-  double demean[n];
-
-  double normalized[n];
-  for(int i = 0; i < n; i++) {
-    demean[i] = x[i] / mean;
-  }
-  sum = 0.0;
-  for (int i = 0; i < n; i++) {
-    sum += demean[i];
-  }
-  cout << "Sum " << sum << endl;
-
-  for (int i = 0; i < n; i++) {
-    normalized[i] = demean[i] / sum;
-    cout << normalized[i] << ' ';
-  }
-
-  cout << endl;
-}
-//Brandon Llizo
-void square(double x[], int n) {
-	for (int i = 0; i < n; i++) {
-		x[i] *= x[i];
-	}
-}
-//David Barlow
-uint32_t gcd(uint32_t a, uint32_t b)
-{
-		int a, b, value, i;
-	cout << "Give me a number" << endl;
-	cin >> a;
-	cout << "Give me another number to find the GCD of them" << endl;
-	cin >> b;
-	for (i = 1; i <= a && i <= b; i++)
-	{
-		if (a % i == 0 && b % i == 0)
-		{
-			value = i;
-		}
-	}
-	cout << value << endl;
-	return value;
-
-}
-//Max Perez
-void swap(uint32_t& a, uint32_t& b) {
-
-	int swap;
-
-	swap = a;
-	a = b;
-	b = swap;
 }
