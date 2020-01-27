@@ -250,8 +250,8 @@ int main() {
 
 }
 
-/*
-bool isPrime(uint32_t p)
+
+bool isPrime(uint32_t p) //Aidan Graffam
 {
   if (p>1)
     {
@@ -266,7 +266,7 @@ bool isPrime(uint32_t p)
     }
   return true;
 }
-*/
+
 bool isPrime(uint32_t p) //Aidan Graffam
 {
   if (p>1)
