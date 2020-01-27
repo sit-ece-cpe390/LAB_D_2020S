@@ -19,7 +19,7 @@ uint32_t lcm(uint32_t a, uint32_t b);
 double fact(uint32_t n);
 uint64_t sum(uint32_t n); //Jose Fermin
 double hypot(double a, double b);//Daniel Zatko
-double diffsq(double a, double b);
+double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c); // John Siyaga
 bool pythagoreantriple(double a, double b);
