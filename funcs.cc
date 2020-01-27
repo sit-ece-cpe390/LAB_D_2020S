@@ -21,7 +21,7 @@ uint64_t sum(uint32_t n);
 double hypot(double a, double b);
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
-double mean(int a, int b, int c);
+double mean(int a, int b, int c); //Jakob Niglio
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
 /*
@@ -68,7 +68,7 @@ double mean(int x[], int n);
 int max(int x[], int n);
 int min(int x[], int n);
 double prod(int x[], int n);
-int sum(int x[], int n);
+int sum(int x[], int n); //Aidan Graffam
 void demean(double x[], int n);
 void normalize(double x[], int n);
 void round(double x[], int n);
@@ -77,7 +77,7 @@ void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 void reverse(int x[], int n);
 uint32_t randomElement(const int x[], int n);
-uint32_t countEvens(const int x[], int n);
+uint32_t countEvens(const int x[], int n); //Vincent Schlenker
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
