@@ -24,7 +24,7 @@ double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
 bool pythagoreantriple(double a, double b); //Jose Fermin
-double trigIdentity(double x);
+double trigIdentity(double x); //Zikang Sheng
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -81,7 +81,7 @@ uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
-void addToEach(int x[], int n, int delta);
+void addToEach(int x[], int n, int delta); //Zikang Sheng
 
 void removeVowels(char s[]);
 void reverse(char s[], int length);//Daniel Zatko
@@ -209,7 +209,7 @@ int main() {
 
 	cout << "countevens=" << countEvens(arr6, 7) << '\n';
 	addToEach(arr6, 7, 3);
-	print(arr6, sizeof(arr6)/sizeof(double));
+	print(arr6, sizeof(arr6)/sizeof(int));
 
 	double arr8[] = {1.0, 2.5, 3.0, 3.5};
 	square(arr8, sizeof(arr8)/sizeof(double));
@@ -316,4 +316,17 @@ void reverse(int x[], int n){
   for(int i = 0; i < n; i++) {
     x[i] = x2[i];
   }
+}
+
+//Zikang Sheng
+double trigIdentity(double x) {
+	double a = sin(x);
+	double b = cos(x);
+	return a * a + b * b;
+}
+
+void addToEach(int x[], int n, int delta) {
+	for (int i = 0; i < n; i++) {
+		x[i] += delta;
+	}
 }
