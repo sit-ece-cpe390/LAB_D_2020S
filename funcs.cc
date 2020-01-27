@@ -373,3 +373,36 @@ void squareRoot(double x[], int n)
 	x = pow(n, 0.5);
 	cout << "The square root is " << x << endl;
 }
+
+
+//Dominic Zecchino
+int sumsq(uint32_t a,uint32_t b) {
+
+	uint32_t lBound = a;
+	uint32_t uBound = b;
+	uint32_t sum = 0;
+
+	while (lBound <= uBound) {
+
+		sum += pow(lBound, 2.0);
+
+		lBound++;
+
+	}
+	cout << "The sum is " << sum << "\n";
+	return sum;
+}
+
+int prodArray(int arr[], int n) {
+	
+	
+	int prod = 1;
+
+	for (int x = 0; x <= n; x++) {
+
+		prod = prod * arr[x];
+
+	}
+	
+	return prod;
+}
