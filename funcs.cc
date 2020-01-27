@@ -8,12 +8,11 @@
 #include <iostream>
 #include <cstdint>
 #include <cmath>
-#include <bits/stdc++.h> 
 using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
 uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b);
-uint32_t countPrimes(uint32_t a, uint32_t b); //Michael Iafelice
+uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b);
@@ -24,7 +23,7 @@ double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
-bool pythagoreantriple(double a, double b); //Jose Fermin
+bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
@@ -75,9 +74,9 @@ double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
 void demean(double x[], int n);
 void normalize(double x[], int n);
-void round(double x[], int n); //Jose Fermin
+void round(double x[], int n);
 void square(double x[], int n); //Brandon Llizo
-void squareRoot(double x[], int n); 
+void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
@@ -85,7 +84,7 @@ uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
 
 void removeVowels(char s[]);
-void reverse(char s[], int length);//Daniel Zatko
+void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
@@ -317,92 +316,4 @@ void reverse(int x[], int n){
   for(int i = 0; i < n; i++) {
     x[i] = x2[i];
   }
-}
-
-//Michael Iafelice 
-uint32_t countPrimes(uint32_t a, uint32_t b) {
-	
-
-	uint32_t count = 0; 
-	uint32_t res = 0;
-	for(uint32_t p = 1; p <= b; p++) {
-		
-		res = p;
-
-	if (res = isPrime((uint32_t) p))
-		{
-			count++;
-		}
-	}
-		return count;	
-}
-int max(int arr[], int n) 
-{ 
-    int x = arr[0]; 
-   
-    for (int i = 1; i < n; i++) 
-        if (arr[i] > x) 
-            x = arr[i]; 
-  
-    return x; 
-} 
-//Jose Fermin
-bool pythagoreantriple(double a, double b)
-{
-	double aa = a*a;
-	double bb = b*b;
-	double c = 0;
-	double cc = aa + bb;
-	c = sqrt(cc);
-	if((double) c == (int) c)
-	{
-		return true;
-	}	
-	else
-	{
-		return false;
-	}
-}
-//David Barlow
-void squareRoot(double x[], int n)
-{
-	double x;
-	int n;
-	cout << "Give me a number" << endl;
-	cin >> n;
-	x = pow(n, 0.5);
-	cout << "The square root is " << x << endl;
-}
-
-
-//Dominic Zecchino
-int sumsq(uint32_t a,uint32_t b) {
-
-	uint32_t lBound = a;
-	uint32_t uBound = b;
-	uint32_t sum = 0;
-
-	while (lBound <= uBound) {
-
-		sum += pow(lBound, 2.0);
-
-		lBound++;
-
-	}
-	cout << "The sum is " << sum << "\n";
-	return sum;
-}
-
-int prodArray(int arr[], int n) {
-	
-	
-	int prod = 1;
-
-	for (int x = 0; x <= n; x++) {
-
-		prod = prod * arr[x];
-
-	}
-	
-	return prod;
 }
