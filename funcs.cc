@@ -15,6 +15,7 @@ uint32_t sumsq(uint32_t a, uint32_t b); // Christina Berke
 uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
+uint64_t prod(uint32_t a, uint32_t b); //Justis DiBattista
 uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b);
 double fact(uint32_t n);
@@ -68,10 +69,7 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
-<<<<<<< HEAD
 double prod(int x[], int n); //Brandon Llizo
-=======
->>>>>>> b6a05e2500e3c4647766195effd092d21d220888
 double prod(int x[], int n);//Nicholas Lenge
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
@@ -90,9 +88,9 @@ void addToEach(int x[], int n, int delta);
 void removeVowels(char s[]);
 void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
-uint32_t checksum(const char s[]);
+uint32_t checksum(const char s[]); //Justis DiBattista
 uint32_t myhash(const char s[]);
-void lowercase(char s[]);
+void lowercase(char s[]); 
 
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
@@ -290,7 +288,7 @@ int sum(int x[], int n) //Aidan Graffam
   for(int i=0; i<=n-1; i++)
     sum=sum+x[i];
   return sum;
-}
+=======
 // Danie Zatko
 double hypot(double a, double b){
   double c=0;
@@ -370,7 +368,6 @@ void reverse(int x[], int n){
     x[i] = x2[i];
   }
 }
-
 // Sean Jahnige
 double fact(uint32_t n) {
 	double factSum = 1;
@@ -388,7 +385,6 @@ double mean(int x[], int n) {
 	mean = (double)mean / n;
 	return mean;
 }
-
 //Derek Kellerman
 bool pythagoreantriple(double a, double b) {
 	if (sqrt(a*a + b*b) - (uint32_t)(sqrt(a*a + b*b)) == 0)
