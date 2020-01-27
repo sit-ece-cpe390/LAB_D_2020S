@@ -391,7 +391,7 @@ double mean(int x[], int n) {
 
 //Derek Kellerman
 bool pythagoreantriple(double a, double b) {
-	if (sqrt(a*a + b*b) - (uint32_t)(sqrt(a*a - b*b)) == 0)
+	if (sqrt(a*a + b*b) - (uint32_t)(sqrt(a*a + b*b)) == 0)
 	return true;
 	else return false;
 }
