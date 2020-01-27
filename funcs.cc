@@ -26,7 +26,7 @@ double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c); // John Siyaga
 bool pythagoreantriple(double a, double b);
-double trigIdentity(double x);
+double trigIdentity(double x); // Justis DiBattista
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -90,7 +90,7 @@ void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
-void lowercase(char s[]);
+void lowercase(char s[]); //Justis DiBattista
 
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
