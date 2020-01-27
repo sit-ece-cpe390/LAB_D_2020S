@@ -24,7 +24,11 @@ uint64_t sum(uint32_t n); //Jose Fermin
 double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
-double mean(int a, int b, int c); // John Siyaga
+
+double mean(int a, int b, int c) {
+		return (a + b + c) / 3.0;
+} // John Siyaga
+
 bool pythagoreantriple(double a, double b); //Derek Kellerman
 double trigIdentity(double x);
 /*
@@ -70,7 +74,11 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
+<<<<<<< HEAD
+double prod(int x[], int n); //Brandon Llizo
+=======
 double prod(int x[], int n);//Nicholas Lenge
+>>>>>>> ec507dcde25a564e8558c5dd84228a48fa0f6ae3
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
@@ -81,7 +89,17 @@ void round(double x[], int n);
 void square(double x[], int n); //Jose Fermin
 void squareRoot(double x[], int n); //David Barlow
 uint32_t strip(double x[], uint32_t n, double a, double b);
-void reverse(int x[], int n); // John Siyaga
+
+void reverse(int x[], int n){
+  int x2[n];
+  for(int i = 0; i < n; i++) {
+    x2[i] = x[n - 1 - i];
+  }
+  for(int i = 0; i < n; i++) {
+    x[i] = x2[i];
+  }
+} // John Siyaga
+
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
@@ -255,7 +273,11 @@ double diffSq(double a, double b) {
     difference = (a * a) - (b * b);
     return difference;
 }
-
+//Brandon Llizo
+uint32_t lcm(uint32_t a, uint32_t b) {
+	uint32_t product = a * b;
+	uint32_t lcm = product / gcd(a, b);
+	return lcm;
 //Christina Berke
 uint32_t sumsq(1,5){
     int count = 1;
