@@ -278,11 +278,12 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 	uint32_t product = a * b;
 	uint32_t lcm = product / gcd(a, b);
 	return lcm;
+}
 //Christina Berke
-uint32_t sumsq(1,5){
+uint32_t sumsq(uint32_t a,uint32_t b){
     uint32_t count = 1;
     uint32_t total = 0;
-    while count >= 5 {
+    while count >= uint32_t b {
         total += count*count;
         count ++;
     }
