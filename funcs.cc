@@ -12,7 +12,7 @@ using namespace std;
 uint32_t sum(uint32_t a, uint32_t b);
 uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b);
-uint32_t countPrimes(uint32_t a, uint32_t b); //Michael Iafelice
+uint32_t countPrimes(uint32_t a, uint32_t b);
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b);
@@ -23,8 +23,13 @@ double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
+<<<<<<< HEAD
 bool pythagoreantriple(double a, double b); //Jose Fermin
 double trigIdentity(double x); //Zikang Sheng
+=======
+bool pythagoreantriple(double a, double b);
+double trigIdentity(double x);
+>>>>>>> 3d475649b5b5a33a79dadee04775cc977d1c6814
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -71,12 +76,12 @@ int min(int x[], int n); //Max Perez
 double prod(int x[], int n);//Nicholas Lenge
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
-int sum(int x[], int n);
+int sum(int x[], int n);//Daniel Zatko
 void demean(double x[], int n);
 void normalize(double x[], int n);
 void round(double x[], int n);
 void square(double x[], int n); //Brandon Llizo
-void squareRoot(double x[], int n); //Jose Fermin
+void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
@@ -84,7 +89,7 @@ uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta); //Zikang Sheng
 
 void removeVowels(char s[]);
-void reverse(char s[], int length);//Daniel Zatko
+void reverse(char s[]);
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
@@ -247,11 +252,20 @@ int main() {
 	cout << myhash("hash a longer string") << '\n';
 
 }
-// Danie Zatko
+// Daniel Zatko
 double hypot(double a, double b){
   double c=0;
   c=sqrt((a*a)+(b*b));
   return c;
+}
+
+// Daniel Zatko
+int sum(int x[], int n){
+    int total=0;
+    for (int i=0; i<n; i++){
+        total=total+x[i];
+    }
+    return total;
 }
 
 //Jakob Niglio
