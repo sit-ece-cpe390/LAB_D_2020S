@@ -430,3 +430,9 @@ void normalize(double x[], int n) {
 
   cout << endl;
 }
+//Brandon Llizo
+void square(double x[], int n) {
+	for (int i = 0; i < n; i++) {
+		x[i] *= x[i];
+	}
+}
