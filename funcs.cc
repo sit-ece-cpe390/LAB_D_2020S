@@ -15,7 +15,7 @@ uint32_t sumsq(uint32_t a, uint32_t b); //Dominic Zecchino
 uint32_t countPrimes(uint32_t a, uint32_t b); //Michael Iafelice
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b); //Max Perez
-uint32_t gcd(uint32_t a, uint32_t b);
+uint32_t gcd(uint32_t a, uint32_t b);//Justis DiBattista
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b); //David Barlow
 uint32_t lcm(uint32_t a, uint32_t b); //Brandon Llizo
@@ -24,8 +24,12 @@ uint64_t sum(uint32_t n); //Jose Fermin
 double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b); //Jakob Niglio
 double mean(int a, int b); //Vincent Schlenker
-double mean(int a, int b, int c); // John Siyaga
-bool pythagoreantriple(double a, double b);
+
+double mean(int a, int b, int c) {
+		return (a + b + c) / 3.0;
+} // John Siyaga
+
+bool pythagoreantriple(double a, double b); //Derek Kellerman
 double trigIdentity(double x);
 /*
 	note: this function uses pass by reference. Compute the answer and assign
@@ -70,18 +74,32 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
-double prod(int x[], int n);
+<<<<<<< HEAD
+double prod(int x[], int n); //Brandon Llizo
+=======
+double prod(int x[], int n);//Nicholas Lenge
+>>>>>>> ec507dcde25a564e8558c5dd84228a48fa0f6ae3
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
-int sum(int x[], int n); //David Barlow
+int sum(int x[], int n);
 int sum(int x[], int n); //Jakob Niglio
 void demean(double x[], int n);
 void normalize(double x[], int n); //Frank Pinnola
 void round(double x[], int n);
 void square(double x[], int n); //Jose Fermin
-void squareRoot(double x[], int n);
+void squareRoot(double x[], int n); //David Barlow
 uint32_t strip(double x[], uint32_t n, double a, double b);
-void reverse(int x[], int n); // John Siyaga
+
+void reverse(int x[], int n){
+  int x2[n];
+  for(int i = 0; i < n; i++) {
+    x2[i] = x[n - 1 - i];
+  }
+  for(int i = 0; i < n; i++) {
+    x[i] = x2[i];
+  }
+} // John Siyaga
+
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
@@ -90,8 +108,8 @@ void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
+void lowercase(char s[]); //Justis DiBattista
 void lowercase(char s[]);
-
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
 double taylorSeriesE(double x);
@@ -118,7 +136,7 @@ int main() {
 	cout << prod(3, 20) << '\n'; // just note whether you think these are right
 	cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
 	cout << prod(3, 100) << '\n';
-	cout << sumsq(1, 5) << '\n';
+    cout << sumsq(1, 5) << '\n';
 	cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
 	cout << "countPrimes(1,1000000): " << countPrimes(1, 1000000) << '\n';
 	cout << "isPrime(1001)=" << isPrime(1001) << '\n';
@@ -246,6 +264,8 @@ int main() {
 	cout << myhash("hash this!") << '\n';
 	cout << myhash("hash a longer string") << '\n';
 
+    
+    
 }
 //Jakob Niglio
 double diffSq(double a, double b) {
@@ -259,4 +279,20 @@ int sum(int x[], int n) {
     for (int i = 0; i < n; i++)
         add += x[i];
     return add;
+}
+//Brandon Llizo
+uint32_t lcm(uint32_t a, uint32_t b) {
+	uint32_t product = a * b;
+	uint32_t lcm = product / gcd(a, b);
+	return lcm;
+}
+//Christina Berke
+uint32_t sumsq(1,5){
+    int count = 1;
+    int total = 0;
+    while count >= 5 {
+        total += count*count;
+        count ++;
+    }
+    return total;
 }
