@@ -21,7 +21,11 @@ uint64_t sum(uint32_t n); //Jose Fermin
 double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
-double mean(int a, int b, int c); // John Siyaga
+
+double mean(int a, int b, int c) {
+		return (a + b + c) / 3.0;
+} // John Siyaga
+
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
 /*
@@ -75,7 +79,17 @@ void round(double x[], int n);
 void square(double x[], int n); //Jose Fermin
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
-void reverse(int x[], int n); // John Siyaga
+
+void reverse(int x[], int n){
+  int x2[n];
+  for(int i = 0; i < n; i++) {
+    x2[i] = x[n - 1 - i];
+  }
+  for(int i = 0; i < n; i++) {
+    x[i] = x2[i];
+  }
+} // John Siyaga
+
 uint32_t randomElement(const int x[], int n);
 uint32_t countEvens(const int x[], int n);
 void addToEach(int x[], int n, int delta);
