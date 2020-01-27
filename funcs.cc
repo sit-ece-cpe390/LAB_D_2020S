@@ -70,11 +70,7 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
-<<<<<<< HEAD
 double prod(int x[], int n); //Brandon Llizo
-=======
-double prod(int x[], int n);//Nicholas Lenge
->>>>>>> ec507dcde25a564e8558c5dd84228a48fa0f6ae3
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
