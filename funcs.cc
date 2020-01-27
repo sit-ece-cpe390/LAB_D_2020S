@@ -16,7 +16,7 @@ uint32_t countPrimes(uint32_t a, uint32_t b);//Nicholas Lenge
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
 uint64_t prod(uint32_t a, uint32_t b); //Justis DiBattista
-uint32_t gcd(uint32_t a, uint32_t b);
+uint32_t gcd(uint32_t a, uint32_t b); //David Barlow
 uint32_t lcm(uint32_t a, uint32_t b);
 double fact(uint32_t n);
 uint64_t sum(uint32_t n);
@@ -78,7 +78,7 @@ void demean(double x[], int n);//Nicholas Lenge
 void normalize(double x[], int n); //Frank Pinnola
 void round(double x[], int n);
 void square(double x[], int n); //Brandon Llizo
-void squareRoot(double x[], int n);
+void squareRoot(double x[], int n); //David Barlow
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
@@ -260,20 +260,6 @@ uint32_t countPrimes1(uint32_t a, uint32_t b) {
 	}
 	return count;
 }
-//Nicholas Lenge
-void demean(double x[], int n) { 
-
-	double sum = 0;
-	for (int i = 0; i < n; i++) {
-		sum += x[i];
-	}
-
-	double mean = sum / n;
-
-	for (int i = 0; i < n; i++) {
-		x[i] -= mean;
-	}
-};
 
 bool isPrime(uint32_t p) //Aidan Graffam
 {
