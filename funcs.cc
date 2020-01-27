@@ -290,7 +290,7 @@ int sum(int x[], int n) //Aidan Graffam
   for(int i=0; i<=n-1; i++)
     sum=sum+x[i];
   return sum;
-=======
+}
 // Danie Zatko
 double hypot(double a, double b){
   double c=0;
@@ -370,8 +370,6 @@ void reverse(int x[], int n){
     x[i] = x2[i];
   }
 }
-<<<<<<< HEAD
-=======
 
 // Sean Jahnige
 double fact(uint32_t n) {
@@ -390,4 +388,3 @@ double mean(int x[], int n) {
 	mean = (double)mean / n;
 	return mean;
 }
->>>>>>> b6a05e2500e3c4647766195effd092d21d220888
