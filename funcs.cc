@@ -15,7 +15,7 @@ uint32_t sumsq(uint32_t a, uint32_t b); //Dominic Zecchino
 uint32_t countPrimes(uint32_t a, uint32_t b); //Michael Iafelice
 bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b); //Max Perez
-uint32_t gcd(uint32_t a, uint32_t b);
+uint32_t gcd(uint32_t a, uint32_t b);//Justis DiBattista
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b); //David Barlow
 uint32_t lcm(uint32_t a, uint32_t b); //Brandon Llizo
@@ -90,7 +90,7 @@ void reverse(char s[]);//Daniel Zatko
 bool isPalindrome(const char s[]);
 uint32_t checksum(const char s[]);
 uint32_t myhash(const char s[]);
-void lowercase(char s[]); //Justis DiBattista test
+void lowercase(char s[]); //Justis DiBattista
 void lowercase(char s[]);
 double taylorSeriesSine(double x);
 double taylorSeriesCosine(double x);
