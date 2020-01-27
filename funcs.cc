@@ -21,7 +21,7 @@ uint64_t sum(uint32_t n); //Jose Fermin
 double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
-double mean(int a, int b, int c);
+double mean(int a, int b, int c); //Jakob Niglio
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
 /*
