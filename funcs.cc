@@ -254,12 +254,7 @@ double diffSq(double a, double b) {
     double difference = 0;
     difference = (a * a) - (b * b);
     return difference;
-<<<<<<< HEAD
 }
-    
-=======
-
->>>>>>> 02171defcb84dd39d4652862d8c069f2156bd908
 //Jakob Niglio
 int sum(int x[], int n) {
     int add = 0;
