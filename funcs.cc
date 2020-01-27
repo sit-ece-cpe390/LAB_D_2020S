@@ -70,11 +70,8 @@ double grav(double m1, Vec3d v1, double m2, Vec3d v2);
 double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
-<<<<<<< HEAD
 double prod(int x[], int n); //Brandon Llizo
-=======
 double prod(int x[], int n);//Nicholas Lenge
->>>>>>> ec507dcde25a564e8558c5dd84228a48fa0f6ae3
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
@@ -276,12 +273,21 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 uint32_t sumsq(uint32_t a,uint32_t b){
     uint32_t count = 1;
     uint32_t total = 0;
-    while count >= uint32_t b {
+    while (count >= uint32_t b) {
         total += count*count;
         count ++;
     }
     return total;
 }
+int findSmallestElement(int x[], int n){
+    int temp = arr[0];
+    for(int i=0; i<n; i++){
+        if(temp>arr[i])
+            temp=arr[i];
+    }
+    return temp;
+}
+    
 // Patrick Biesty
 ##include <iostream>
 using namespace std;
