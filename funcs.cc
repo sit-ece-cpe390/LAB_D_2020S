@@ -71,7 +71,10 @@ double mean(int x[], int n); //Sean Jahnige
 int max(int x[], int n); //Michael Iafelice
 int min(int x[], int n); //Max Perez
 double prod(int x[], int n); //Brandon Llizo
+<<<<<<< HEAD
 double prod(int x[], int n);//Nicholas Lenge
+=======
+>>>>>>> 02171defcb84dd39d4652862d8c069f2156bd908
 int min(int x[], int n); // Christina Berke
 double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);
@@ -255,7 +258,7 @@ double diffSq(double a, double b) {
     double difference = 0;
     difference = (a * a) - (b * b);
     return difference;
-    
+
 //Jakob Niglio
 int sum(int x[], int n) {
     int add = 0;
@@ -270,10 +273,10 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 	return lcm;
 }
 //Christina Berke
-uint32_t sumsq(1,5){
-    int count = 1;
-    int total = 0;
-    while count >= 5 {
+uint32_t sumsq(uint32_t a,uint32_t b){
+    uint32_t count = 1;
+    uint32_t total = 0;
+    while count >= uint32_t b {
         total += count*count;
         count ++;
     }
