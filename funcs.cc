@@ -463,3 +463,12 @@ uint32_t gcd(uint32_t a, uint32_t b)
 	return value;
 
 }
+//Max Perez
+void swap(uint32_t& a, uint32_t& b) {
+
+	int swap;
+
+	swap = a;
+	a = b;
+	b = swap;
+}
