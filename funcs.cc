@@ -349,11 +349,6 @@ double prod(int x[], int n) {
   return a;
 }
 
-int main() {
-  int x[] = {1,2,3,4,5,6}
-  cout << prod(x,6) << endl;
-}
-
 // John Siyaga
 double mean(int a, int b, int c) {
 		return (a + b + c) / 3.0;
