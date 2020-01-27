@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
 Sean Jahnige
->>>>>>> 989a94f710444ea62267084b167c53b498114e76
 Christina Berke
 Michael Iafelice
 Aidan Graffam
@@ -20,7 +16,6 @@ Brandon Llizo
 Frank Pinnola
 Dominic Zecchino
 Jakob Niglio
-<<<<<<< HEAD
 Jack Mavorah
 Patrick Biesty
 Jose Fermin
