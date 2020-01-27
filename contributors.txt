@@ -14,17 +14,14 @@ Max Robert Perez
 Jakob Niglio
 Brandon Llizo
 Frank Pinnola
-<<<<<<< HEAD
-test
-=======
 Dominic Zecchino
 Jakob Niglio
 Jack Mavorah
 Patrick Biesty
-Jose Fermin
+Jose Ferin
 Frank Pinnola
 Nicholas Lenge
 Daniel Zatko
 Patrick Biesty
 Derek Kellerman
->>>>>>> 2208ae647e08b322bd8137dcc807ca03e3d5a125
+Balal Khan
