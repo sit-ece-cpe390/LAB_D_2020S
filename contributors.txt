@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+
+=======
+Sean Jahnige
+>>>>>>> 989a94f710444ea62267084b167c53b498114e76
 Christina Berke
 Michael Iafelice
 Aidan Graffam
@@ -8,7 +13,22 @@ John Siyaga
 Justis DiBattista
 Vincent Schlenker
 Aidan Graffam
+Max Robert Perez
 Jakob Niglio
 Brandon Llizo
 Frank Pinnola
+<<<<<<< HEAD
 test
+=======
+Dominic Zecchino
+Jakob Niglio
+<<<<<<< HEAD
+Jack Mavorah
+Patrick Biesty
+Jose Fermin
+Brandon Llizo
+Frank Pinnola
+Nicholas Lenge
+Daniel Zatko
+Derek Kellerman
+>>>>>>> 2208ae647e08b322bd8137dcc807ca03e3d5a125
