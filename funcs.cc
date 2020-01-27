@@ -421,12 +421,9 @@ void normalize(double x[], int n) {
   for (int i = 0; i < n; i++) {
     sum += demean[i];
   }
-  cout << "Sum " << sum << endl;
 
   for (int i = 0; i < n; i++) {
-    normalized[i] = demean[i] / sum;
-    cout << normalized[i] << ' ';
+    x[i] = demean[i] / sum;
   }
 
-  cout << endl;
 }
