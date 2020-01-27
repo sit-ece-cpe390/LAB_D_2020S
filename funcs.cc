@@ -250,23 +250,6 @@ int main() {
 
 }
 
-/*
-bool isPrime(uint32_t p)
-{
-  if (p>1)
-    {
-     for(int i=2;i<p;i++)
-       {
-	 if(p%i==0)
-	   {
-	     return false;
-	     break;
-	   }
-       }
-    }
-  return true;
-}
-*/
 bool isPrime(uint32_t p) //Aidan Graffam
 {
   if (p>1)
