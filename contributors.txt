@@ -1,12 +1,12 @@
-
+Michael Iafelice
 Daniel Zatko
 Brandon Llizo
-Jose Fermin
 John Siyaga
 Justis DiBattista
 Vincent Schlenker
 Aidan Graffam
 Jakob Niglio
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Balal Khan 
@@ -31,3 +31,10 @@ Frank Pinnola
 Brandon Llizo
 >>>>>>> 77a2e8b4ddcda6c99a1f8964c42f2afe88cc9464
 Balal Khan
+=======
+Patrick Biesty
+Jose Fermin
+Frank Pinnola
+>>>>>>> 9dfbe5f3b3e32a69507dafe279babb9a96f5e97a
+
+pumpkins
