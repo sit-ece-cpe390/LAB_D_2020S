@@ -12,7 +12,7 @@ uint32_t sum(uint32_t a, uint32_t b);
 uint64_t prod(uint32_t a, uint32_t b);
 uint32_t sumsq(uint32_t a, uint32_t b);
 uint32_t countPrimes(uint32_t a, uint32_t b);
-bool isPrime(uint32_t p);
+bool isPrime(uint32_t p);//Aidan Graffam
 void swap(uint32_t& a, uint32_t& b);
 uint32_t gcd(uint32_t a, uint32_t b);
 uint32_t lcm(uint32_t a, uint32_t b);
@@ -20,7 +20,7 @@ double fact(uint32_t n);
 uint64_t sum(uint32_t n);
 double hypot(double a, double b);
 double diffsq(double a, double b);
-double mean(int a, int b);
+double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c); //Jakob Niglio
 bool pythagoreantriple(double a, double b);
 double trigIdentity(double x);
