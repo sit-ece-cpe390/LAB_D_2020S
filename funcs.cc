@@ -366,11 +366,11 @@ void quadraticEquation(double a, double b, double c, double& x1, double& x2)
 //------------------------
 
 //Max Perez
-void swap(int *a, int *b) {
-	int swap;
-	swap = *a;
-	*a = *b;
-	*b = swap;
+void swap(int& a, int& b) {
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
 }
 //Max Perez
 int min(int x[], int n) {
