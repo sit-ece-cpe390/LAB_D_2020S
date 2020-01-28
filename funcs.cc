@@ -344,6 +344,27 @@ void addToEach(int x[], int n, int delta) {
 		x[i] += delta;
 	}
 }
+
+--------------------------
+//Jack Mavorah
+	
+uint32_t countEvens(const int x[], int n) {
+	int count = 0;
+	for (int i = 0; i < n; i++) {
+		if (x[i] % 2 == 0)
+		    count++;
+	}
+	return count;
+}
+
+void quadraticEquation(double a, double b, double c, double& x1, double& x2)
+{
+	x1 = (-b + sqrt((b*b) - (4 * a*c)) / (2 * a));
+	x2 = (-b - sqrt((b*b) - (4 * a*c)) / (2 * a));
+
+}
+//------------------------
+
 //Max Perez
 void swap(int *a, int *b) {
 	int swap;
