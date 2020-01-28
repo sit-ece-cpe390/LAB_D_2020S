@@ -344,3 +344,10 @@ void addToEach(int x[], int n, int delta) {
 		x[i] += delta;
 	}
 }
+//Max Perez
+void swap(int *a, int *b) {
+	int swap;
+	swap = *a;
+	*a = *b;
+	*b = swap;
+}
