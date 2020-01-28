@@ -372,3 +372,14 @@ void swap(int *a, int *b) {
 	*a = *b;
 	*b = swap;
 }
+//Max Perez
+int min(int x[], int n) {
+	int minV = x[0];
+	for (int i = 1; i < n; i++) {
+
+	if (x[i] < minV) {
+	minV = x[i];	
+	}	
+	}
+	return minV;
+}
