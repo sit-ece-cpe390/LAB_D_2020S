@@ -34,7 +34,7 @@ double trigIdentity(double x);
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
 */
-void quadraticEquation(double a, double b, double c, double& x1, double& x2);
+void quadraticEquation(double a, double b, double c, double& x1, double& x2);  //Jack Mavorah
 
 double area(double x1, double y1, double x2, double y2, double x3, double y3);
 double area(double x1, double y1,
@@ -85,7 +85,7 @@ void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
 
 uint32_t randomElement(const int x[], int n);
-uint32_t countEvens(const int x[], int n);
+uint32_t countEvens(const int x[], int n); //Jack Mavorah
 void addToEach(int x[], int n, int delta); //Zikang Sheng
 
 void removeVowels(char s[]);
