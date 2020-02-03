@@ -414,13 +414,13 @@ void round(double x[], int n)
 uint64_t prod(uint32_t a, uint32_t b)
 {
 	uint64_t product = 0;
-	product = (uint32_t a)*(uint32_t b)
+	product = (a)*(b)
 	return  product;
 }
 double squareRoot(double x[], int n)
 {
 	double sqrrt = 0;
-	sqrrt = (x[n])**(1/2);
+	sqrrt = pow(x[n],0.5);
 	return sqrrt;
 }
 		
