@@ -23,13 +23,8 @@ double hypot(double a, double b);//Daniel Zatko
 double diffsq(double a, double b);
 double mean(int a, int b); //Vincent Schlenker
 double mean(int a, int b, int c);
-<<<<<<< HEAD
 bool pythagoreantriple(double a, double b); //Jose Fermin
 double trigIdentity(double x); //Zikang Sheng
-=======
-bool pythagoreantriple(double a, double b);
-double trigIdentity(double x);
->>>>>>> 3d475649b5b5a33a79dadee04775cc977d1c6814
 /*
 	note: this function uses pass by reference. Compute the answer and assign
 	to x1 and x2 and the roots will be sent back to main and printed
@@ -345,7 +340,7 @@ void addToEach(int x[], int n, int delta) {
 	}
 }
 
---------------------------
+//--------------------------
 //Jack Mavorah
 	
 uint32_t countEvens(const int x[], int n) {
