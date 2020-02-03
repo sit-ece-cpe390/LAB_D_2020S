@@ -79,7 +79,7 @@ double prod(int x[], int n); //Patrick Biesty
 int sum(int x[], int n);//Daniel Zatko
 void demean(double x[], int n);
 void normalize(double x[], int n);
-void round(double x[], int n);
+void round(double x[], int n);//Jose Fermin
 void square(double x[], int n); //Brandon Llizo
 void squareRoot(double x[], int n);
 uint32_t strip(double x[], uint32_t n, double a, double b);
@@ -383,3 +383,34 @@ int min(int x[], int n) {
 	}
 	return minV;
 }
+
+//Jose Fermin
+bool pythagoreantriple(double a, double b) 
+{			
+	double aa = a*a;
+	double bb = b*b;
+	double c = 0;
+	double cc = aa + bb;
+	
+	c = sqrt(cc);
+
+	if((double) c == (int) c)
+	{
+		return true;
+	}	
+	
+	else
+	{
+		return false;
+	}
+}
+
+void round(double x[], int n)
+{
+    for(int i=0; i < n; i++)
+    {
+        x[i] = round(x[i]);
+        cout << x[i] << endl;
+    }
+}
+
