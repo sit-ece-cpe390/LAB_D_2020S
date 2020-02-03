@@ -423,6 +423,7 @@ double squareRoot(double x[], int n)
 	sqrrt = pow(x[n],0.5);
 	return sqrrt;
 }
+<<<<<<< HEAD
 
 //Balal Khan
 double trigIdentity(double x) {
@@ -435,3 +436,11 @@ double trigIdentity(double x) {
 
 	return ans;
 }		
+=======
+//Brandon Llizo
+void square(double x[], int n) {
+	for (int i = 0; i < n; i++) {
+		x[i] *= x[i];
+	}
+}	
+>>>>>>> 7d4e2752f447e2d93a0ef2dc9714e6bbcd4e5753
