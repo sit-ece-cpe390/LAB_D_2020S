@@ -212,7 +212,8 @@ int main() {
 	print(arr6, sizeof(arr6)/sizeof(int));
 
 	double arr8[] = {1.0, 2.5, 3.0, 3.5};
-	square(arr8, sizeof(arr8)/sizeof(double));
+	
+	(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double));
 	squareRoot(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double)); // should be back to orinal values
@@ -409,3 +410,17 @@ void round(double x[], int n)
     }
 }
 
+//Justis DiBattista
+uint64_t prod(uint32_t a, uint32_t b)
+{
+	uint64_t product = 0;
+	product = (uint32_t a)*(uint32_t b)
+	return  product;
+}
+void squareRoot(double x[], int n)
+{
+	double sqrrt = 0;
+	sqrrt = (x[n])**(1/2);
+	cout << sqrrt << endl;
+}
+		
