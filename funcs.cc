@@ -423,4 +423,9 @@ double squareRoot(double x[], int n)
 	sqrrt = (x[n])**(1/2);
 	return sqrrt;
 }
-		
+//Brandon Llizo
+void square(double x[], int n) {
+	for (int i = 0; i < n; i++) {
+		x[i] *= x[i];
+	}
+}	
