@@ -212,8 +212,8 @@ int main() {
 	print(arr6, sizeof(arr6)/sizeof(int));
 
 	double arr8[] = {1.0, 2.5, 3.0, 3.5};
-	
-	(arr8, sizeof(arr8)/sizeof(double));
+
+	square(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double));
 	squareRoot(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double)); // should be back to orinal values
@@ -287,7 +287,7 @@ uint32_t lcm(uint32_t a, uint32_t b) {
 uint32_t sumsq(uint32_t a,uint32_t b){
     uint32_t count = 1;
     uint32_t total = 0;
-    while count >= uint32_t b {
+    while (count >= uint32_t b) {
         total += count*count;
         count ++;
     }
@@ -306,11 +306,6 @@ double prod(int x[], int n) {
     a=a * x [i];
   }
   return a;
-}
-
-int main() {
-  int x[] = {1,2,3,4,5,6}
-  cout << prod(x,6) << endl;
 }
 
 // John Siyaga
@@ -343,7 +338,7 @@ void addToEach(int x[], int n, int delta) {
 
 //--------------------------
 //Jack Mavorah
-	
+
 uint32_t countEvens(const int x[], int n) {
 	int count = 0;
 	for (int i = 0; i < n; i++) {
@@ -374,27 +369,27 @@ int min(int x[], int n) {
 	for (int i = 1; i < n; i++) {
 
 	if (x[i] < minV) {
-	minV = x[i];	
-	}	
+	minV = x[i];
+	}
 	}
 	return minV;
 }
 
 //Jose Fermin
-bool pythagoreantriple(double a, double b) 
-{			
+bool pythagoreantriple(double a, double b)
+{
 	double aa = a*a;
 	double bb = b*b;
 	double c = 0;
 	double cc = aa + bb;
-	
+
 	c = sqrt(cc);
 
 	if((double) c == (int) c)
 	{
 		return true;
-	}	
-	
+	}
+
 	else
 	{
 		return false;
@@ -435,14 +430,17 @@ double trigIdentity(double x) {
 	ans = a * a + b * b;
 
 	return ans;
-}		
+}
 =======
 //Brandon Llizo
 void square(double x[], int n) {
 	for (int i = 0; i < n; i++) {
 		x[i] *= x[i];
 	}
+<<<<<<< HEAD
 }	
+
+
 
 //Balal Khan
 void normalize(double x[], int n) {
@@ -456,3 +454,4 @@ void normalize(double x[], int n) {
 		cout << x[i] << endl;
 	}
 }
+
