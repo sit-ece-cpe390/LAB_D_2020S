@@ -417,10 +417,10 @@ uint64_t prod(uint32_t a, uint32_t b)
 	product = (uint32_t a)*(uint32_t b)
 	return  product;
 }
-void squareRoot(double x[], int n)
+double squareRoot(double x[], int n)
 {
 	double sqrrt = 0;
 	sqrrt = (x[n])**(1/2);
-	cout << sqrrt << endl;
+	return sqrrt;
 }
 		
