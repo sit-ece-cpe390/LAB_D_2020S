@@ -423,9 +423,24 @@ double squareRoot(double x[], int n)
 	sqrrt = pow(x[n],0.5);
 	return sqrrt;
 }
+<<<<<<< HEAD
+
+//Balal Khan
+double trigIdentity(double x) {
+	double a, b, ans;
+	const double pi = 3.1415926;
+
+	a = sin(x * pi / 180.0);
+	b = cos(x * pi / 180.0);
+	ans = a * a + b * b;
+
+	return ans;
+}		
+=======
 //Brandon Llizo
 void square(double x[], int n) {
 	for (int i = 0; i < n; i++) {
 		x[i] *= x[i];
 	}
 }	
+>>>>>>> 7d4e2752f447e2d93a0ef2dc9714e6bbcd4e5753
