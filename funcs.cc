@@ -213,7 +213,7 @@ int main() {
 
 	double arr8[] = {1.0, 2.5, 3.0, 3.5};
 	
-	(arr8, sizeof(arr8)/sizeof(double));
+	square(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double));
 	squareRoot(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double)); // should be back to orinal values
