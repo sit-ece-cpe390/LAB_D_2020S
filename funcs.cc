@@ -293,7 +293,7 @@ uint32_t sumsq(uint32_t a,uint32_t b){
     }
     return total;
 }
-// Patrick Biesty
+// Patrick Biesty <3
 uint32_t sum(uint32_t a, uint32_t b){
   uint32_t c=0;
   c= (a + b);
@@ -437,21 +437,5 @@ void square(double x[], int n) {
 	for (int i = 0; i < n; i++) {
 		x[i] *= x[i];
 	}
-<<<<<<< HEAD
-}	
-
-
-
-//Balal Khan
-void normalize(double x[], int n) {
-	double length, sum = 0;
-	for (int i = 0; i < n; i++) {
-		sum += x[i] * x[i];
-	}
-	length = sqrt(sum);
-	for (int i = 0; i < n; i++) {
-		x[i] = x[i] / length;
-		cout << x[i] << endl;
-	}
 }
-
+>>>>>>> 7d4e2752f447e2d93a0ef2dc9714e6bbcd4e5753
