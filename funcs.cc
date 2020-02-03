@@ -443,4 +443,16 @@ void square(double x[], int n) {
 		x[i] *= x[i];
 	}
 }	
->>>>>>> 7d4e2752f447e2d93a0ef2dc9714e6bbcd4e5753
+
+//Balal Khan
+void normalize(double x[], int n) {
+	double length, sum = 0;
+	for (int i = 0; i < n; i++) {
+		sum += x[i] * x[i];
+	}
+	length = sqrt(sum);
+	for (int i = 0; i < n; i++) {
+		x[i] = x[i] / length;
+		cout << x[i] << endl;
+	}
+}
