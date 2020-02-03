@@ -212,7 +212,7 @@ int main() {
 	print(arr6, sizeof(arr6)/sizeof(int));
 
 	double arr8[] = {1.0, 2.5, 3.0, 3.5};
-	
+
 	square(arr8, sizeof(arr8)/sizeof(double));
 	print(arr8, sizeof(arr8)/sizeof(double));
 	squareRoot(arr8, sizeof(arr8)/sizeof(double));
@@ -308,11 +308,6 @@ double prod(int x[], int n) {
   return a;
 }
 
-int main() {
-  int x[] = {1,2,3,4,5,6}
-  cout << prod(x,6) << endl;
-}
-
 // John Siyaga
 double mean(int a, int b, int c) {
 		return (a + b + c) / 3.0;
@@ -343,7 +338,7 @@ void addToEach(int x[], int n, int delta) {
 
 //--------------------------
 //Jack Mavorah
-	
+
 uint32_t countEvens(const int x[], int n) {
 	int count = 0;
 	for (int i = 0; i < n; i++) {
@@ -374,27 +369,27 @@ int min(int x[], int n) {
 	for (int i = 1; i < n; i++) {
 
 	if (x[i] < minV) {
-	minV = x[i];	
-	}	
+	minV = x[i];
+	}
 	}
 	return minV;
 }
 
 //Jose Fermin
-bool pythagoreantriple(double a, double b) 
-{			
+bool pythagoreantriple(double a, double b)
+{
 	double aa = a*a;
 	double bb = b*b;
 	double c = 0;
 	double cc = aa + bb;
-	
+
 	c = sqrt(cc);
 
 	if((double) c == (int) c)
 	{
 		return true;
-	}	
-	
+	}
+
 	else
 	{
 		return false;
@@ -435,12 +430,12 @@ double trigIdentity(double x) {
 	ans = a * a + b * b;
 
 	return ans;
-}		
+}
 =======
 //Brandon Llizo
 void square(double x[], int n) {
 	for (int i = 0; i < n; i++) {
 		x[i] *= x[i];
 	}
-}	
+}
 >>>>>>> 7d4e2752f447e2d93a0ef2dc9714e6bbcd4e5753
