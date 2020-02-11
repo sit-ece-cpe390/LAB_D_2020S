@@ -293,7 +293,7 @@ uint32_t sumsq(uint32_t a,uint32_t b){
     }
     return total;
 }
-// Patrick Biesty
+// Patrick Biesty <3
 uint32_t sum(uint32_t a, uint32_t b){
   uint32_t c=0;
   c= (a + b);
