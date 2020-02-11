@@ -24,8 +24,5 @@ Nicholas Lenge
 Daniel Zatko
 Patrick Biesty
 Derek Kellerman
-<<<<<<< HEAD
- Zikang Sheng
-=======
+Zikang Sheng
 Balal Khan
->>>>>>> 51f08e7381401e63bccd9fd743efe16a42507649
