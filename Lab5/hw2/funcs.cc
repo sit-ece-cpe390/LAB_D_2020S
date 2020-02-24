@@ -14,3 +14,4 @@ double mean(double a, double b) {
 	double c = (a+b) / 2;
 	return c;
 }
+//this is correct, good job mate
