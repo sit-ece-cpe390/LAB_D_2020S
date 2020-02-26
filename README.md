@@ -15,3 +15,6 @@ https://docs.google.com/presentation/d/1eTqMG_fluSRYoVHt_o1hUdZ7UzLUP46Mh9msICm3
 
 # Lab5
 https://docs.google.com/document/d/1s5yz6-yOWbx3mFMufBvMjcfjJ0jJrOAl3TxdfvYNNbI/edit?usp=sharing
+
+# Lab6
+https://docs.google.com/presentation/d/180o0XnH33kmeIYAXK2gQHvnkqB4T2oOOJoNs3EcNDx8/edit?usp=sharing
