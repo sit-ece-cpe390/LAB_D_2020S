@@ -11,7 +11,7 @@ https://docs.google.com/presentation/d/1sYXHU0bNwfbWJ5TbWethPO1zv9Phnv8oV-55Wyw3
 https://docs.google.com/presentation/d/1DX1HaFWrOcUTgo5HCsySddqBqrWfL1631kOhZXfndXU/edit?usp=sharing
 
 # Slides for lab4
-https://github.com/sit-ece-cpe390/LAB_B_2020S/blob/master/LAB4.pptx
+https://docs.google.com/presentation/d/1eTqMG_fluSRYoVHt_o1hUdZ7UzLUP46Mh9msICm3gtc/edit?usp=sharing
 
 # Lab5
 https://docs.google.com/document/d/1s5yz6-yOWbx3mFMufBvMjcfjJ0jJrOAl3TxdfvYNNbI/edit?usp=sharing
