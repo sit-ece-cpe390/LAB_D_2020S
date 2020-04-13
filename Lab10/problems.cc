@@ -1,3 +1,10 @@
+extern int setBit(int a, int b);
+extern int clearBit(int a, int b);
+extern int flip(int a, int b);
+extern int replaceBits(int a, int b, int c);
+extern int buildColor(int r, int g, int b);
+extern double choose(int a, int b);
+
 int main() {
 	int answer = setBit(5, 8);
 	// take the number 5 000000000000000000000000000000101 and set bit 8 from the right (rightmost bit is position 0)
@@ -47,6 +54,20 @@ It is called BIC (bit clear)
 // then replace with the numbers 0x123
   answer =  replaceBits(0xF0F0A5A5, 0xFFFFF000, 0x123);
   cout << hex << answer << '\n'; // should be 0xF0F0A123
+
+	/*
+		given 3 values r, g, b, write a function buildColor to construct
+		a single integer where the 32 bit integer, in hex is:
+
+		0x00rrggbb
+
+		the high byte is zero, the next is red, the next is green, 
+		and the last is blue.
+	*/
+	cout << hex << buildColor(255, 0, 0) << '\n'; // should be 0x00FF0000
+	cout << hex << buildColor(0, 255, 0) << '\n'; // should be 0x0000FF00
+	cout << hex << buildColor(0, 0, 255) << '\n'; // should be 0x000000FF
+	cout << hex << buildColor(128, 128, 128) << '\n'; // should be 0x00808080
 
 
 //loop and function practice (C++)
