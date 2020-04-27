@@ -29,4 +29,4 @@ https://docs.google.com/document/d/1KZ7SuFWFgAKbpXMxKSVDZqUSRsG9oxoj-0nkMgwIm_0/
 https://docs.google.com/document/d/1rCFDtqdxEr0DjrRcz3Fj86mSbt6xh98agUD3VjEE6tk/edit?usp=sharing
 
 # Lab 12
-
+https://docs.google.com/document/d/1l97WMdfjVGEZ_GZGhIxpeWeg5pVm9dCV7u-o8DnqytU/edit?usp=sharing
