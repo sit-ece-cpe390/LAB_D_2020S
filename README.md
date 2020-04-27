@@ -27,3 +27,6 @@ https://docs.google.com/document/d/1KZ7SuFWFgAKbpXMxKSVDZqUSRsG9oxoj-0nkMgwIm_0/
 
 # Lab 11
 https://docs.google.com/document/d/1rCFDtqdxEr0DjrRcz3Fj86mSbt6xh98agUD3VjEE6tk/edit?usp=sharing
+
+# Lab 12
+https://docs.google.com/document/d/1iMpeif3Mv3_y2bgSjvd4yEgnlY1SBpATjF-6bT0fxCc/edit?usp=sharing
